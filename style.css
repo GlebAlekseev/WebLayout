@@ -538,7 +538,7 @@ ul li {
 
 }
 
-.block-2 .part-3::before {
+.mark-rhomb-left::before {
     content: "";
     position: absolute;
     width: 12px;
@@ -548,6 +548,17 @@ ul li {
     background: #93da49;
     transform: rotate(-45deg);
 }
+
+/*.block-2 .part-3::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 12px;*/
+/*    height: 12px;*/
+/*    top: 25px;*/
+/*    left: -40px;*/
+/*    background: #93da49;*/
+/*    transform: rotate(-45deg);*/
+/*}*/
 
 .block-2 .part-3 b {
     font-weight: 600;
@@ -574,7 +585,8 @@ ul li {
 .block-3 {
     margin-bottom: 150px;
 }
-.block-3 .wrapper{
+
+.block-3 .wrapper {
     position: relative;
     height: 690px;
     padding-top: 150px;
@@ -602,6 +614,7 @@ ul li {
     right: 3%;
     bottom: -180px;
 }
+
 .block-3 .wrapper .bg {
     width: 100%;
     height: 540px;
@@ -610,6 +623,7 @@ ul li {
     background: #307fe2;
 
 }
+
 .block-3 .wrapper .bg::before {
     content: "";
     position: absolute;
@@ -620,6 +634,7 @@ ul li {
     left: 15%;
     top: 13%;
 }
+
 .block-3 .wrapper .bg::after {
     content: "";
     position: absolute;
@@ -630,6 +645,7 @@ ul li {
     right: 15%;
     top: 13%;
 }
+
 .block-3 .wrapper .content {
     width: 100%;
     height: 100%;
@@ -655,6 +671,7 @@ ul li {
     width: 450px;
     margin-top: 30px;
 }
+
 .block-3 .wrapper .content > span b {
     font-weight: 600;
 }
@@ -665,9 +682,11 @@ ul li {
     gap: 100px;
     margin-top: 60px;
 }
-.block-3 .wrapper .content .features > *{
+
+.block-3 .wrapper .content .features > * {
     position: relative;
 }
+
 .block-3 .wrapper .content .features .feature__1::before {
     content: "";
     display: inline-block;
@@ -679,6 +698,7 @@ ul li {
     top: -10px;
     left: -60px;
 }
+
 .block-3 .wrapper .content .features .feature__2::before {
     content: "";
     display: inline-block;
@@ -713,11 +733,208 @@ ul li {
 }
 
 
+/* Block 4 */
+.block-4 .container {
+    text-align: center;
+}
+
+.block-4 h2 {
+    font-size: 52px;
+    font-weight: 600;
+    padding: 0 10%;
+}
+
+.block-4 h2 span {
+    color: black;
+}
+
+.block-4 .content h3 {
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #307FE2;
+    padding: 0 10%;
+    text-transform: uppercase;
+}
+
+.block-4 .content .features {
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+.block-4 .content .features span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.block-4 .content .features span b {
+    color: #307FE2;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.block-4 .content .features img {
+    width: 260px;
+    height: 160px;
+    border-radius: 0 50px 0 50px;
+    background-color: #F6F6F6;
+}
+
+.block-4 .content .features > div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+/* Block 5 */
+.block-5 {
+    margin-top: 100px;
+}
+
+.block-5 .container {
+}
+
+.block-5 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-5 .content > p {
+    position: relative;
+    width: 650px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.8;
+    margin-left: -250px;
+}
+
+.block-5 .content > p b {
+    font-weight: 600;
+    color: #307FE2;
+}
+
+.block-5 .content > h2 {
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #307FE2;
+    width: 732px;
+    margin-top: 50px;
+    margin-left: 325px;
+}
+
+.block-5 .content .features {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-5 .content .features > div {
+    background: #F6F6F6;
+    width: 520px;
+    height: 550px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.block-5 .content .features > div .up {
+    display: flex;
+    padding: 10px 0;
+}
+
+.block-5 .content .features > div .up .sideline {
+    width: 10px;
+    height: 100%;
+    background: #A60000;
+    margin-left: 50px;
+    margin-right: 25px;
+    position: relative;
+}
+
+.block-5 .content .features > div .up .sideline::before {
+    content: "";
+    position: absolute;
+    background: url("images/cross-icon.svg") center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    margin-left: -50px;
+}
+
+.block-5 .content .features > div .up h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    color: #a60000;
+}
+
+.block-5 .content .features > div .up p {
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    width: 400px;
+}
+
+
+
+.block-5 .content .features > div .down {
+    background: #307FE2;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+    /*margin: 20px;*/
+    /*margin-bottom: 20px;*/
+    padding: 40px;
+}
+
+.block-5 .content .features > div .down h3 {
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.block-5 .content .features > div .down h3::before {
+    content: "";
+    background: url("images/check-mark-icon.svg");
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.block-5 .content .features > div .down p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+/* Block 6 */
 
 
 
 
-    /**/
+
+/**/
 .mote {
     width: 100%;
     height: 1200px;
@@ -725,7 +942,7 @@ ul li {
 }
 
 .none {
-    display: none;
+    /*display: none;*/
 }
 
 
