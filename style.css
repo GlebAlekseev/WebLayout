@@ -1288,6 +1288,138 @@ ul li {
     margin-left: 10px;
 }
 
+    /* Block 8 */
+
+.block-8 .wrapper {
+    position: relative;
+    height: 900px;
+    width: 100%;
+    background: #307FE2;
+
+}
+
+.block-8 .bg::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    clip-path: ellipse(120% 50% at 50% 145%);
+}
+.block-8 .bg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    clip-path: ellipse(120% 50% at 50% -25%);
+}
+
+.block-8 .content-wrapper {
+    position: absolute;
+    display: flex;
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-8 .content {
+    display: flex;
+    gap: 50px;
+    /*background: blue;*/
+    color: white;
+}
+
+.block-8 .content .left img{
+    width: 890px;
+    height: 710px;
+}
+
+.block-8 .content .right {
+    padding-top: 12%;
+}
+
+.block-8 .content .right h2 {
+    font-size: 52px;
+    font-weight: 600;
+    width: 600px;
+}
+
+.block-8 .content .right p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 30px;
+    width: 550px;
+}
+.block-8 .content .right p b {
+    font-weight: 600;
+}
+.block-8 .content .btn-get-checklist {
+    /*height: 40px;*/
+    background: #F9E547;
+    margin-top: 60px;
+    color: #1E1E1E;
+    display: inline-block;
+    padding: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.block-8 .content .btn-get-checklist span::after {
+    content: "";
+    background: url("images/check-mark-icon.svg") center;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-left: 15px;
+    filter: brightness(0%);
+}
+
+    /* Block 9 */
+
+.block-9 {
+    background: red;
+}
+
+.block-9 .wrapper {
+    position: relative;
+}
+
+.block-9 .bg {
+    position: absolute;
+}
+
+.block-9 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-9 .content h2 {
+    font-weight: 600;
+    font-size: 96px;
+    letter-spacing: 0.1em;
+    color: #307FE2;
+}
+.block-9 .content h2 b {
+    font-size: 48px;
+    color: #F9E547;
+}
+
+.block-9 .content .slider {
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -1299,7 +1431,7 @@ ul li {
 }
 
 .none {
-    /*display: none;*/
+    display: none;
 }
 
 
