@@ -1,0 +1,6 @@
+<svg>
+    <clipPath id="subtraction">
+        <ellipse cx="120" cy="50" rx="50" ry="145"/>
+        <ellipse cx="120" cy="50" rx="50" ry="-25"/>
+    </clipPath>
+</svg>

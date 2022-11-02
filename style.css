@@ -1289,23 +1289,29 @@ ul li {
 }
 
     /* Block 8 */
+.block-8{
+    position: relative;
+}
+
 
 .block-8 .wrapper {
     position: relative;
-    height: 900px;
+    height: 1000px;
     width: 100%;
     background: #307FE2;
-
 }
 
-.block-8 .bg::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: white;
-    clip-path: ellipse(120% 50% at 50% 145%);
-}
+/*.block-8 .bg::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    !*background: white;*!*/
+/*    background: white;*/
+/*    opacity: 0.5;*/
+/*    mix-blend-mode: screen;*/
+/*    clip-path: ellipse(120% 50% at 50% 145%);*/
+/*}*/
 .block-8 .bg::before {
     content: "";
     position: absolute;
@@ -1322,6 +1328,9 @@ ul li {
     height: inherit;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+    /*padding-bottom: 100px;*/
+    margin-top: -00px;
 }
 
 .block-8 .content {
@@ -1381,18 +1390,132 @@ ul li {
     /* Block 9 */
 
 .block-9 {
-    background: red;
+    margin-top: -80px;
 }
 
 .block-9 .wrapper {
     position: relative;
+    background: white;
+    clip-path: ellipse(120% 45% at 50% 45%);
 }
 
+/* bg */
+/* up */
 .block-9 .bg {
+    width: 100%;
+    height: 100%;
     position: absolute;
+    margin-top: -50px;
+}
+.block-9 .bg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-.block-9 .content {
+.block-9 .bg > .up > div {
+    position: absolute;
+    top: 0;
+}
+.block-9 .bg > .down > div {
+    position: absolute;
+    bottom: 0;
+}
+
+.block-9 .bg .up .element-1 {
+    background: url("images/b9up1.png") center;
+    background-size: cover;
+    width: 310px;
+    height: 180px;
+    top: 175px;
+    left: 100px;
+}
+.block-9 .bg .up .element-2 {
+    background: url("images/b9up2.png") center;
+    background-size: cover;
+    width: 410px;
+    height: 320px;
+    left: 700px;
+}
+.block-9 .bg .up .element-3 {
+    background: url("images/b9up3.png") center;
+    background-size: cover;
+    width: 230px;
+    height: 350px;
+    right: 100px;
+    top: 200px;
+}
+.block-9 .bg .up .element-4 {
+    background: url("images/b9up4.png") center;
+    background-size: cover;
+    width: 250px;
+    height: 100px;
+    top: 600px;
+    left: 150px;
+}
+.block-9 .bg .up .element-5 {
+    background: url("images/b9up5.png") center;
+    background-size: cover;
+    width: 330px;
+    height: 510px;
+    top: 400px;
+    right: 120px;
+    z-index: 10;
+}
+.block-9 .bg .up .element-6 {
+    background: url("images/b9up6.png") center;
+    background-size: cover;
+    width: 470px;
+    height: 500px;
+    right: 300px;
+    top: -100px;
+}
+.block-9 .bg .up .element-7 {
+    background: url("images/b9up7.png") center;
+    background-size: cover;
+    width: 470px;
+    height: 500px;
+    top: -300px;
+    left: 250px;
+}
+/* down */
+.block-9 .bg .down .element-1 {
+    background: url("images/b9down1.png") center;
+    background-size: cover;
+    width: 260px;
+    height: 320px;
+    bottom: 100px;
+    right: 100px;
+}
+.block-9 .bg .down .element-2 {
+    background: url("images/b9down2.png") center;
+    background-size: cover;
+    width: 160px;
+    height: 210px;
+    bottom: 400px;
+    left: 50px;
+}
+.block-9 .bg .down .element-3 {
+    background: url("images/b9down3.png") center;
+    background-size: cover;
+    width: 1020px;
+    height: 350px;
+    bottom: 75px;
+    left: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+.block-9 .wrapper .content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1403,6 +1526,7 @@ ul li {
     font-size: 96px;
     letter-spacing: 0.1em;
     color: #307FE2;
+    margin-top: 200px;
 }
 .block-9 .content h2 b {
     font-size: 48px;
@@ -1410,16 +1534,91 @@ ul li {
 }
 
 .block-9 .content .slider {
-    margin-top: 100px;
+    margin-top: 200px;
+    width: 1100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block-9 .content .slider .main {
+    width: 100%;
+    height: 790px;
+    background: purple;
+    position: relative;
+    background: url("images/b9-scan-1.png") center;
+    background-size: cover;
+    box-shadow: 0px 18px 145px rgba(0, 0, 0, 0.1);
+}
+
+.block-9 .content .slider .main::before {
+    content: "";
+    background: url("images/turn-left-icon.svg") center;
+    background-size: cover;
+    width: 107px;
+    height: 107px;
+    position: absolute;
+    top: calc(50% - 53px);
+    left: -70px;
+}
+.block-9 .content .slider .main::after {
+    content: "";
+    background: url("images/turn-right-icon.svg") center;
+    background-size: cover;
+    width: 107px;
+    height: 107px;
+    position: absolute;
+    top: calc(50% - 53px);
+    right: -70px;
 }
 
 
+.block-9 .content .slider .pagination {
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.block-9 .content .slider .pagination .elements {
+    width: 100%;
+    height: 5px;
+    background: orange;
+    display: flex;
+}
+.block-9 .content .slider .pagination .elements .element {
+    height: 100%;
+    flex: 1;
+}
+.block-9 .content .slider .pagination .elements .element:nth-child(2n){
+    background: lightgray;
+}
+.block-9 .content .slider .pagination .elements .element:nth-child(2n-1){
+    background: gray;
+}
+
+.block-9 .content .slider .pagination .elements .element.active {
+    background: #307FE2;
+}
 
 
-
-
-
-
+.block-9 .content .slider .pagination .page-number {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+}
+.block-9 .content .slider .pagination .page-number b:first-child {
+    font-size: 48px;
+    color: #307FE2;
+}
+.block-9 .content .slider .pagination .page-number b:last-child {
+    font-size: 48px;
+}
 
 
 
@@ -1431,7 +1630,7 @@ ul li {
 }
 
 .none {
-    display: none;
+    /*display: none;*/
 }
 
 
