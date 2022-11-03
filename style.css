@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap');
 
-body {
-    /*padding: 0 0px;*/
-    color: #5e5e5e;
-    font-family: 'Montserrat', sans-serif;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    color: #5e5e5e;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 ul li {
     list-style-type: none;
 }
 
+b, h2 {
+    font-weight: 600;
+}
 
 /**/
-
 
 .btn-yellow-with-check-icon {
     background: #F9E547;
@@ -42,172 +45,45 @@ ul li {
     filter: brightness(0%);
 }
 
-/* Блок 1 */
 
-.block-1 {
-    height: 840px;
-    font-size: 14px;
+.color-93DA49-green {
+    color: #93DA49;
 }
 
-.wrapper {
-    margin: 0 auto;
-    max-width: 1920px;
-    height: inherit;
-    overflow: hidden;
+.color-5E5E5E-gray {
+    color: #5E5E5E;
 }
 
-.block-1 .up {
-    position: relative;
-    height: inherit;
-    max-height: 750px;
-    clip-path: ellipse(140% 100% at 50% 0%);
+.color-1E1E1E-black {
+    color: #1E1E1E;
 }
 
-/* Фон */
-
-.block-1 .up .bg {
-    height: inherit;
-    width: inherit;
+.color-F6F6F6-white {
+    color: #F6F6F6;
 }
 
-.block-1 .up .bg .clear-air {
-    height: inherit;
-    width: inherit;
-    background-color: #C4C4C4;
-    background-image: url("images/clear-air-fly-fantastic-travel.png");
-    background-position: center;
-    background-size: cover;
+.color-307FE2-azure {
+    color: #307FE2;
 }
 
-.block-1 .up .bg .ellipse {
-    position: absolute;
-    left: calc(50% - 700px);
-    top: -351px;
-    width: 1400px;
-    height: 750px;
-    background: #FFFFFF;
-    filter: blur(175px);
+.color-A60000-red {
+    color: #A60000;
 }
 
-.block-1 .up .bg .sunrise {
-    position: absolute;
-    width: 3000px;
-    height: 1700px;
-    left: calc(50% - 1500px);
-    bottom: 0;
-    background-size: cover;
-    background: url("images/sunrise.png") center;
-    mix-blend-mode: screen;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-
+.color-F9E547-yellow {
+    color: #F9E547;
 }
 
-.block-1 .up .bg .man {
-    position: absolute;
-    background: url("images/man.png") center;
-    background-size: cover;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-
+.color-D0E5FF-lightblue {
+    color: #D0E5FF;
 }
 
-.block-1 .up .bg .frame {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(180deg, #0D233F 0%, rgba(13, 35, 63, 0) 100%);
-    opacity: 0.7;
-    transform: rotate(-180deg);
+.color-3197F4-blue {
+    color: #3197F4;
 }
 
-.block-1 .up .bg .stamp {
-    position: absolute;
-    bottom: 50px;
-    left: calc(50% - 110px);
-    background: url("images/stamp-icon.svg");
-    width: 253px;
-    height: 215px;
-    z-index: 1;
-}
-
-.block-1 .up .bg .arrow {
-    position: absolute;
-    bottom: 120px;
-    left: calc(50% + 70px);
-    background: url("images/arrow.svg");
-    width: 200px;
-    height: 200px;
-    color: white;
-
-}
-
-.block-1 .up .bg .arrow.clickbait {
-    transform: scaleX(-1);
-    bottom: 170px;
-    left: calc(50% - 280px);
-
-}
-
-.block-1 .up .bg .arrow.clickbait::after {
-    position: absolute;
-    content: "Жми!";
-    transform: scaleX(-1);
-    top: 45px;
-    color: white;
-    right: 70px;
-    background: black;
-}
-
-/* CONTAINER */
-.container {
-    margin: 0 auto;
-    height: inherit;
-    max-width: 1120px;
-}
-
-.content .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-/* Content */
-.block-1 .up .content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
-
-.block-1 .up .content .up__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-/* Header ---- logo + social + phone */
-
-.block-1 .up .content .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.main-logo {
-    background: url("images/logo.svg") center;
-    background-size: cover;
-    width: 240px;
-    height: 65px;
+.fw-500 {
+    font-weight: 500;
 }
 
 /* Social */
@@ -217,7 +93,8 @@ ul li {
     gap: 10px;
 }
 
-.social > li {
+.social a {
+    display: inline-block;
     width: 36px;
     height: 36px;
 }
@@ -242,29 +119,73 @@ ul li {
     background-size: cover;
 }
 
-.block-1 .up .content .header .social__phone {
+/**/
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1920px;
+    height: inherit;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1120px;
+    height: inherit;
+}
+
+.content {
     display: flex;
+    flex-direction: column;
+}
+
+/**/
+
+
+/* Блок 1 */
+.block-1 .wrapper {
+    padding-bottom: 460px;
+}
+
+/* content */
+.block-1 .content {
+    text-align: center;
+    align-items: center;
+}
+
+.block-1 .content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
     gap: 80px;
+    padding: 0 10px;
+    width: 100%;
 }
 
-.block-1 .up .content .header .social {
-    display: flex;
-    gap: 15px;
+.block-1 .content .header .logotype {
+    background: url("images/logo.svg") center;
+    background-size: cover;
+    width: 245px;
+    height: 65px;
+}
+.block-1 .content .header .padding {
+    flex: 1;
 }
 
-.block-1 .up .content .header .phone {
+.block-1 .content .header .phone {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     font-weight: 500;
+    gap: 5px;
 }
 
-.block-1 .up .content .header .phone > b {
-    font-size: 20px;
-    margin-bottom: 5px;
+.block-1 .content .header .phone .number {
+    font-size: 1.4em;
 }
 
-.block-1 .up .content .header .phone > a::before {
+.block-1 .content .header .phone .order-call::before {
     display: inline-block;
     content: "";
     background: url("images/phone-icon.svg") center;
@@ -275,79 +196,157 @@ ul li {
     margin-left: 20px;
 }
 
-/* titles */
 
-.block-1 .up .content .title {
-    font-size: 52px;
-    font-weight: 600;
+.block-1 .content .title {
+    font-size: 3.7em;
     margin-top: 25px;
-    color: #1e1e1e;
 }
 
-.block-1 .up .content .sup-title {
+.block-1 .content .subtitle {
     margin-top: 40px;
-    font-size: 32px;
-    font-weight: 400;
-    text-align: center;
+    font-size: 2.3em;
+    max-width: 600px;
 }
 
-.block-1 .up .content .describe-title {
-    font-size: 18px;
-    font-weight: 600;
+.block-1 .content .describe {
     margin-top: 40px;
+    font-size: 1.3em;
 }
 
-.block-1 .up .content .describe-title span {
-    color: #93da49;
-}
-
-.block-1 .up .content .describe-title::before {
+.block-1 .content .describe::before {
+    display: inline-block;
+    content: "";
     background: url("images/lock-icon.svg") center;
     background-size: cover;
     width: 20px;
     height: 20px;
-    display: inline-block;
-    content: "";
     vertical-align: -15%;
 }
 
+/* BG */
 
-.block-1 .up .content > * > .label {
+.block-1 .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #307FE2;
+    z-index: -1;
+    clip-path: ellipse(140% 100% at 50% 0%);
+}
+
+.block-1 .bg h1 {
+    position: absolute;
+    font-size: 9.5em;
     text-transform: uppercase;
-    font-size: 133px;
-    margin-bottom: 40px;
-    font-weight: 900;
     letter-spacing: 0.1em;
     opacity: 0.16;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.block-1 .bg .clear-air {
+    height: inherit;
+    width: inherit;
+    background: #C4C4C4 url("images/clear-air-fly-fantastic-travel.png") center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.block-1 .bg .sunrise {
+    position: absolute;
+    width: 3000px;
+    height: 1400px;
+    left: calc(50% - 1500px);
+    bottom: 0;
+    background-size: cover;
+    background: url("images/sunrise.png") center;
+    mix-blend-mode: screen;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.block-1 .bg .man {
+    position: absolute;
+    background: url("images/man.png") center;
+    background-size: cover;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.block-1 .bg .frame {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(180deg, #0D233F 0%, rgba(13, 35, 63, 0) 100%);
+    opacity: 0.7;
+    transform: rotate(-180deg);
+}
+
+.block-1 .bg .stamp {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 110px);
+    background: url("images/stamp-icon.svg") no-repeat;
+    height: 215px;
+    width: 215px;
+    z-index: 1;
+}
+
+.block-1 .bg .arrow.clickbait {
+    transform: scaleX(-1);
+    bottom: 170px;
+    left: calc(50% - 280px);
+}
+
+.block-1 .bg .arrow {
+    position: absolute;
+    bottom: 120px;
+    left: calc(50% + 70px);
+    background: url("images/arrow.svg");
+    width: 200px;
+    height: 200px;
     color: white;
 }
 
-/* DOWN */
-
-.block-1 .down {
-    width: 100%;
-    height: 90px;
+.block-1 .bg .arrow.clickbait::after {
+    position: absolute;
+    content: "Жми!";
+    transform: scaleX(-1);
+    top: 45px;
+    color: white;
+    right: 70px;
+    background: #1E1E1E;
 }
 
+.block-1 .bg .ellipse {
+    position: absolute;
+    left: calc(50% - 700px);
+    top: -351px;
+    width: 1400px;
+    height: 750px;
+    background: #FFFFFF;
+    filter: blur(175px);
+}
 
-.block-1 .down .features {
+/* container features */
+.block-1 .content .features {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
-    font-weight: 400;
-}
-
-.block-1 .down .features b {
-    font-weight: 600;
-}
-
-.block-1 .down .features > div {
-    display: flex;
+    margin-top: 40px;
+    font-size: 1.3em;
     gap: 15px;
 }
 
-.block-1 .down .features .features__1::before {
+.block-1 .content .features > li {
+    display: flex;
+    text-align: start;
+    gap: 15px;
+}
+
+.block-1 .content .features > li:nth-child(1)::before {
     content: "";
     display: inline-block;
     background: url("images/percent-icon.svg") center;
@@ -356,7 +355,7 @@ ul li {
     height: 44px;
 }
 
-.block-1 .down .features .features__2::before {
+.block-1 .content .features > li:nth-child(2)::before {
     content: "";
     display: inline-block;
     background: url("images/home-icon.svg") center;
@@ -365,7 +364,7 @@ ul li {
     height: 44px;
 }
 
-.block-1 .down .features .features__3::before {
+.block-1 .content .features > li:nth-child(3)::before {
     content: "";
     display: inline-block;
     background: url("images/label-icon.svg") center;
@@ -373,6 +372,105 @@ ul li {
     width: 44px;
     height: 44px;
 }
+
+/* menu */
+.block-1 .content .header .menu-wrapper {
+    padding-right: 7px;
+}
+.block-1 .content .header .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.block-1 .content .header .menu::before {
+    content: "";
+    width: 44px;
+    height: 44px;
+    transform: rotate(45deg);
+    background: #f9e547;
+}
+
+.block-1 .content .header .menu .stick {
+    width: 45%;
+    height: 2px;
+    background: #5E5E5E;
+    position: absolute;
+    left: 11px;
+}
+.block-1 .content .header .menu .stick:nth-child(1) {
+    top: 14px;
+}
+.block-1 .content .header .menu .stick:nth-child(2) {
+    top: 21px;
+}
+.block-1 .content .header .menu .stick:nth-child(3) {
+    top: 28px;
+}
+
+/* active */
+.block-1 .content .header .menu.active {
+    transform: rotate(45deg);
+}
+.block-1 .content .header .menu.active::before{
+    transform: rotate(0deg);
+}
+.block-1 .content .header .menu.active .stick {
+    width: 80%;
+    height: 2px;
+    background: #5E5E5E;
+    position: absolute;
+}
+.block-1 .content .header .menu.active .stick:nth-child(1) {
+    top: 50%;
+    left: 11%;
+}
+.block-1 .content .header .menu.active .stick:nth-child(2) {
+    top: 50%;
+    left: 11%;
+    transform: rotate(90deg);
+}
+.block-1 .content .header .menu.active .stick:nth-child(3) {
+    display: none;
+}
+
+/* modal */
+.block-1 .modal-menu {
+    display: none;
+    position: fixed;
+    top: 115px;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.block-1 .modal-menu .social {
+    background: #307FE2;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+.block-1 .modal-menu .social a {
+    width: 72px;
+    height: 72px;
+    mix-blend-mode: screen;
+    filter: invert(1) sepia(100%) hue-rotate(180deg) saturate(400%);
+}
+.block-1 .modal-menu .background {
+    background: black;
+    height: 100%;
+    opacity: 0.7;
+}
+
+/* use js */
+/*body {*/
+/*    overflow-y: hidden;*/
+/*}*/
+/*===============================================================*/
+
+
+
+
+
 
 /* Block 2 */
 .block-2 {
@@ -2234,6 +2332,7 @@ ul li {
     top: -100px;
     left: -20px;
 }
+
 .block-18 .bg .wallet-2 {
     position: absolute;
     width: 650px;
@@ -2244,6 +2343,7 @@ ul li {
     top: -100px;
     right: -20px;
 }
+
 .block-18 .bg .glow-1 {
     position: absolute;
     width: 370px;
@@ -2254,6 +2354,7 @@ ul li {
     left: 190px;
     z-index: 10;
 }
+
 .block-18 .bg .glow-2 {
     position: absolute;
     width: 390px;
@@ -2264,8 +2365,6 @@ ul li {
     right: 140px;
     z-index: 10;
 }
-
-
 
 
 .block-18 .wrapper {
@@ -2316,14 +2415,17 @@ ul li {
     width: 700px;
     gap: 100px;
 }
+
 .block-19 .container .content .left h2 {
     font-weight: 600;
     font-size: 64px;
     letter-spacing: 0.1em;
 }
+
 .block-19 .container .content .left h2 b {
     font-size: 96px;
 }
+
 .block-19 .container .content .left > span {
     position: relative;
     font-size: 32px;
@@ -2338,16 +2440,19 @@ ul li {
     gap: 15px;
     align-items: end;
 }
+
 .block-19 .container .content .left .info {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
+
 .block-19 .container .content .left .info .part-1 {
     font-weight: 600;
     font-size: 24px;
     color: #5E5E5E;
 }
+
 .block-19 .container .content .left .info .part-2 {
     font-weight: 400;
     font-size: 24px;
@@ -2363,6 +2468,7 @@ ul li {
     display: inline-block;
     margin-right: 10px;
 }
+
 .block-19 .container .content .left .info > div:nth-child(2) .part-2::before {
     content: "";
     width: 13px;
@@ -2387,6 +2493,7 @@ ul li {
     height: 800px;
     position: relative;
 }
+
 .block-19 .wrapper iframe {
     width: 100%;
     height: 100%;
@@ -2402,23 +2509,28 @@ ul li {
     top: 0;
     left: 400px;
 }
+
 .block-19 .wrapper .info .info-wrapper {
     display: flex;
     flex-direction: column;
 }
+
 .block-19 .wrapper .info .title {
     font-size: 24px;
     letter-spacing: 0.1em;
     font-weight: 600;
 }
+
 .block-19 .wrapper .info .location {
     font-weight: 500;
     font-size: 24px;
 }
+
 .block-19 .wrapper .info .info-wrapper {
     position: relative;
     padding-left: 90px;
 }
+
 .block-19 .wrapper .info .info-wrapper::before {
     position: absolute;
     content: "";
@@ -2431,7 +2543,7 @@ ul li {
 
 
 .none {
-    /*display: none;*/
+    display: none;
 }
 
 

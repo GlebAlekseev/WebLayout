@@ -1,0 +1,101 @@
+
+/*@media (min-width: 360px) and (max-width: 991px) {*/
+@media (min-width: 360px) and (max-width: 999px) {
+    /* Block 1 */
+    .block-1 .wrapper {
+        padding-bottom: 320px;
+    }
+    /* features */
+    .block-1 .content .features {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .block-1 .content .features li {
+        width: 300px;
+    }
+    .block-1 .content .features {
+        color: #5E5E5E;
+    }
+    /* wrapper = content + bg */
+    /* content */
+    .block-1 .content {
+        color: #F6F6F6;
+        padding: 10px;
+        gap: 40px;
+    }
+    .block-1 .content .header {
+        flex-wrap: wrap;
+    }
+    .block-1 .content .phone {
+        width: 100%;
+    }
+    .block-1 .content .phone > * {
+        width: 100%;
+    }
+    .block-1 .content .title {
+        color: #F6F6F6;
+        margin-top: 60px;
+    }
+
+    .block-1 .content .header .phone .order-call {
+        display: block;
+    }
+    .block-1 .content .header .phone .order-call::before {
+        background: url("images/phone-icon-yellow.svg") center;
+        background-size: cover;
+    }
+    .block-1 .content .header .logotype {
+        background: url("images/logo-white.svg") center;
+        background-size: cover;
+    }
+    .block-1 .content .describe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    /* bg */
+    .block-1 .bg {
+        clip-path: none;
+    }
+    .block-1 .bg > * {
+        display: none;
+    }
+    .block-1 .bg .stamp {
+        display: inline-block;
+        background: url("images/stamp-icon-yellow.svg") ;
+        width: 230px;
+    }
+
+    /* menu */
+    .block-1 .content .header .menu {
+        display: flex;
+    }
+    .block-1 .content .header .social {
+        display: none;
+    }
+
+
+    .block-1 .modal-menu.active  {
+        display: flex;
+    }
+
+
+
+
+
+}
+
+/*@media (min-width: 992px) and (max-width: 1861px) {*/
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .block-1 .content .header {
+        padding: 0 30px;
+    }
+    .block-1 .bg h1 {
+        font-size: 6.7em;
+    }
+
+
+
+}
