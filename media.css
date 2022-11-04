@@ -215,7 +215,19 @@
     }
 
     /*Block 5*/
+    .block-5 .content > .title {
+        font-size: 3.4em;
+        align-self: center;
+        max-width: 580px;
 
+    }
+    .block-5 .content > .describe {
+        font-size: 1.7em;
+        text-align: center;
+        display: block;
+        align-self: center;
+    }
+    /*Block 6*/
 
 
 }
@@ -253,6 +265,6 @@
 
     /*Block 4*/
     /*Block 5*/
-
+    /*Block 6*/
 
 }

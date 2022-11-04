@@ -149,6 +149,7 @@ b, h2, h3 {
     height: 11px;
     margin-right: 10px;
     margin-left: 20px;
+    flex-shrink: 0;
 }
 .lock-icon-before::before {
     display: inline-block;
@@ -158,6 +159,7 @@ b, h2, h3 {
     width: 20px;
     height: 20px;
     vertical-align: -15%;
+    flex-shrink: 0;
 }
 .alert-icon-before::before {
     display: inline-block;
@@ -167,6 +169,7 @@ b, h2, h3 {
     width: 60px;
     height: 60px;
     margin-top: 20px;
+    flex-shrink: 0;
 }
 .mark-rhomb-before::before {
     display: inline-block;
@@ -177,6 +180,7 @@ b, h2, h3 {
     background: #93da49;
     transform: rotate(-45deg);
     margin-top: 25px;
+    flex-shrink: 0;
 }
 .check-icon-after::after {
     display: inline-block;
@@ -187,9 +191,26 @@ b, h2, h3 {
     height: 18px;
     margin-left: 15px;
     filter: brightness(0%);
+    flex-shrink: 0;
 }
-
-
+.cross-icon-before::before {
+    display: inline-block;
+    content: "";
+    background: url("images/cross-icon.svg") center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.check-icon-before::before {
+    display: inline-block;
+    content: "";
+    background: url("images/check-mark-icon.svg") center;
+    width: 18px;
+    height: 15px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
 /**/
 
 /* Блок 1 */
@@ -785,157 +806,145 @@ b, h2, h3 {
 }
 
 /*Block 5*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Block 5 */
 .block-5 {
     margin-top: 100px;
 }
-
-.block-5 .container {
-}
-
 .block-5 .content {
+    margin: 0 10px;
+}
+.block-5 .content > .describe {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.block-5 .content > p {
-    position: relative;
-    width: 650px;
-    font-weight: 500;
-    font-size: 34px;
+    font-size: 2.4em;
     line-height: 1.8;
-    margin-left: -250px;
+    max-width: 700px;
 }
-
-.block-5 .content > p b {
-    font-weight: 600;
-    color: #307FE2;
-}
-
-.block-5 .content > h2 {
-    font-size: 64px;
-    font-weight: 600;
+.block-5 .content > .title {
+    font-size: 4.6em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #307FE2;
-    width: 732px;
-    margin-top: 50px;
-    margin-left: 325px;
+    max-width: 720px;
+    align-self: end;
+    margin-top: 40px;
 }
 
-.block-5 .content .features {
+.block-5 .content > .features {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    gap: 40px;
     flex-wrap: wrap;
-    align-items: center;
+    margin-top: 60px;
+    gap: 50px;
+    align-self: start;
     justify-content: center;
 }
-
-.block-5 .content .features > div {
-    background: #F6F6F6;
-    width: 520px;
-    height: 550px;
-    padding: 20px;
+.block-5 .content > .features > div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    background: #F6F6F6;
+    max-width: 460px;
+    min-height: 550px;
+    padding: 20px;
     gap: 20px;
+    position: relative;
 }
 
-.block-5 .content .features > div .up {
+.block-5 .content > .features > div .up {
     display: flex;
-    padding: 10px 0;
 }
-
-.block-5 .content .features > div .up .sideline {
+.block-5 .content > .features > div .up .sideline {
+    display: flex;
     width: 10px;
     height: 100%;
     background: #A60000;
-    margin-left: 50px;
+    margin-left: 25px;
     margin-right: 25px;
     position: relative;
 }
-
-.block-5 .content .features > div .up .sideline::before {
-    content: "";
-    position: absolute;
-    background: url("images/cross-icon.svg") center;
-    background-size: cover;
-    width: 24px;
-    height: 24px;
-    margin-left: -50px;
-}
-
-.block-5 .content .features > div .up h3 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.8;
+.block-5 .content > .features > div .up .feature-wrapper .title {
     letter-spacing: 0.1em;
-    color: #a60000;
+    line-height: 1.7;
+    font-size: 1.4em;
+    text-transform: uppercase;
 }
-
-.block-5 .content .features > div .up p {
+.block-5 .content > .features > div .up .feature-wrapper .describe {
+    font-size: 1.1em;
     line-height: 2;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 10px;
-    width: 400px;
 }
 
-
-.block-5 .content .features > div .down {
+.block-5 .content > .features > div .down {
+    display: flex;
+    flex-direction: column;
     background: #307FE2;
-    color: white;
-    width: 100%;
+    width: inherit;
     height: 100%;
-
-    /*margin: 20px;*/
-    /*margin-bottom: 20px;*/
     padding: 40px;
 }
-
-.block-5 .content .features > div .down h3 {
-    font-size: 20px;
-    line-height: 1.8;
+.block-5 .content > .features > div .down .title {
+    line-height: 1.7;
     letter-spacing: 0.1em;
-    font-weight: 600;
+    font-size: 1.4em;
     text-transform: uppercase;
-    position: relative;
 }
-
-.block-5 .content .features > div .down h3::before {
-    content: "";
-    background: url("images/check-mark-icon.svg");
-    width: 18px;
-    height: 15px;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.block-5 .content .features > div .down p {
-    font-weight: 600;
-    font-size: 16px;
+.block-5 .content > .features > div .down .describe {
     line-height: 2;
-    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: 600;
 }
+.block-5 .content > .features > div::before {
+    position: absolute;
+    content: "1";
+    color: #ECECEC;
+    font-size: 4.6em;
+    line-height: 2;
+    font-weight: 500;
+    top: -75px;
+    left: 70px;
+}
+
+.block-5 .content > .features > div:nth-child(2)::before {
+    content: "2";
+}
+.block-5 .content > .features > div:nth-child(3)::before {
+    content: "3";
+}
+.block-5 .content > .features > div:nth-child(4)::before {
+    content: "4";
+}
+.block-5 .content > .features > div:nth-child(5)::before {
+    content: "5";
+}
+.block-5 .content > .features > div:nth-child(6)::before {
+    content: "6";
+}
+
+
+/* Block 6 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Block 6 */
 
