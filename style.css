@@ -24,9 +24,8 @@ b, h2 {
 
 /**/
 
-.btn-yellow-with-check-icon {
+.btn-yellow {
     background: #F9E547;
-    margin-top: 60px;
     color: #1E1E1E;
     display: inline-block;
     padding: 30px;
@@ -35,16 +34,6 @@ b, h2 {
     text-align: center;
 }
 
-.btn-yellow-with-check-icon span::after {
-    content: "";
-    background: url("images/check-mark-icon.svg") center;
-    background-size: cover;
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    margin-left: 15px;
-    filter: brightness(0%);
-}
 
 
 .color-93DA49-green {
@@ -139,6 +128,8 @@ b, h2 {
 .content {
     display: flex;
     flex-direction: column;
+    width: inherit;
+    height: inherit;
 }
 
 /**/
@@ -186,6 +177,16 @@ b, h2 {
     background: #93da49;
     transform: rotate(-45deg);
     margin-top: 25px;
+}
+.check-icon-after::after {
+    display: inline-block;
+    content: "";
+    background: url("images/check-mark-icon.svg") center;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    margin-left: 15px;
+    filter: brightness(0%);
 }
 
 
@@ -651,190 +652,95 @@ b, h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Block 3 */
-.block-3 {
-    margin-bottom: 150px;
-}
-
-.block-3 .wrapper {
-    position: relative;
-    height: 690px;
-    padding-top: 150px;
-}
-
-.block-3 .wrapper::before {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    background: url("images/keys.png") center;
-    background-size: cover;
-    width: 575px;
-    height: 575px;
-    top: 0;
-    left: 10%;
-}
-
-.block-3 .wrapper::after {
-    content: "";
-    background: url("images/plane.png") center;
-    background-size: cover;
-    width: 575px;
-    height: 575px;
-    position: absolute;
-    right: 3%;
-    bottom: -180px;
-}
-
-.block-3 .wrapper .bg {
-    width: 100%;
-    height: 540px;
-    position: absolute;
-    clip-path: ellipse(80% 50% at 50% 50%);
-    background: #307fe2;
-
-}
-
-.block-3 .wrapper .bg::before {
-    content: "";
-    position: absolute;
-    width: 368px;
-    height: 420px;
-    background: #3197F4;
-    filter: blur(92.5px);
-    left: 15%;
-    top: 13%;
-}
-
-.block-3 .wrapper .bg::after {
-    content: "";
-    position: absolute;
-    width: 368px;
-    height: 420px;
-    background: #3197F4;
-    filter: blur(92.5px);
-    right: 15%;
-    top: 13%;
-}
-
-.block-3 .wrapper .content {
-    width: 100%;
-    height: 100%;
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
+/*.block-3 {*/
+/*    margin-top: 100px;*/
+/*}*/
+.block-3 .content {
     align-items: center;
-    z-index: 99;
+    /*margin: 100px 0;*/
+    color: #F6F6F6;
+    padding: 200px 20px;
 }
-
-.block-3 .wrapper .content h2 {
-    font-size: 52px;
-    font-weight: 600;
-    margin-top: 80px;
-}
-
-.block-3 .wrapper .content > span {
-    font-size: 32px;
+.block-3 .content .title {
+    font-size: 3.7em;
     text-align: center;
-    width: 450px;
-    margin-top: 30px;
 }
-
-.block-3 .wrapper .content > span b {
-    font-weight: 600;
+.block-3 .content .subtitle {
+    font-size: 2.3em;
+    margin-top: 20px;
+    max-width: 450px;
+    text-align: center;
 }
-
-.block-3 .wrapper .content .features {
+.block-3 .content .features {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 100px;
-    margin-top: 60px;
+    font-size: 1.3em;
+    margin-top: 40px;
 }
-
-.block-3 .wrapper .content .features > * {
-    position: relative;
+.block-3 .content .features > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-
-.block-3 .wrapper .content .features .feature__1::before {
+.block-3 .content .features > div:nth-child(1)::before {
     content: "";
     display: inline-block;
     background: url("images/home-icon.svg") center;
     background-size: cover;
     width: 44px;
     height: 44px;
-    position: absolute;
-    top: -10px;
-    left: -60px;
+    flex-shrink: 0;
+
 }
 
-.block-3 .wrapper .content .features .feature__2::before {
+.block-3 .content .features > div:nth-child(2)::before {
     content: "";
     display: inline-block;
     background: url("images/plane-icon.svg") center;
     background-size: cover;
     width: 44px;
     height: 44px;
-    position: absolute;
-    top: -10px;
-    left: -60px;
+    flex-shrink: 0;
 }
+
+.block-3 .content .btn-yellow {
+    margin-top: 40px;
+}
+
+    /**/
+.block-3 .bg {
+    margin-top: 100px;
+    width: 100%;
+    height: calc(100% - 200px);
+    position: absolute;
+    clip-path: ellipse(80% 50% at 50% 50%);
+    background: #307fe2;
+}
+
+.block-3 .content .key {
+    position: absolute;
+    width: 575px;
+    height: 575px;
+    background: url("images/keys.png") center;
+    background-size: cover;
+    top: -6%;
+    left: -16%;
+}
+.block-3 .content .plane {
+    position: absolute;
+    width: 575px;
+    height: 575px;
+    background: url("images/plane.png") center;
+    background-size: cover;
+    bottom: -11%;
+    right: -24%;
+}
+
+
+
 
 
 /* Block 4 */

@@ -157,7 +157,6 @@
     .block-2 .content > .title {
         background: white;
         width: calc(100% - 120px);
-        /*display: inline-block;*/
     }
     .block-2 .content > .title .hammer {
         width: 300px;
@@ -165,21 +164,86 @@
         top: 5%;
         left: 60%;
     }
+
+    /* Block 3 */
+    .block-3 .content .title {
+        font-size: 2.6em;
+    }
+    .block-3 .content .subtitle {
+        font-size: 1.4em;
+    }
+
+    .block-3 .content .key {
+        width: 310px;
+        height: 310px;
+        top: 30%;
+        /*left: -26%;*/
+        left: -95px;
+    }
+    .block-3 .content .plane {
+        width: 380px;
+        height: 380px;
+        bottom: 25%;
+        /*right: -50%;*/
+        right: -180px;
+    }
+
+    .block-3 .content .features {
+        display: flex;
+        flex-direction: column;
+        gap: 300px;
+        width: 100%;
+        max-width: 700px;
+        padding: 20px 0;
+    }
+    .block-3 .content .features > div:nth-child(1) {
+        align-self: end;
+        margin-left: 120px;
+    }
+    .block-3 .content .features > div:nth-child(2) {
+        align-self: start;
+        margin-right: 120px;
+    }
+
+    .block-3 .bg {
+        clip-path: ellipse(140% 50% at 50% 50%);
+    }
+
+    /*Block 4*/
+
 }
 
 /*@media (min-width: 992px) and (max-width: 1861px) {*/
 @media (min-width: 1000px) and (max-width: 1500px) {
+    /* Block 1 */
     .block-1 .content .header {
         padding: 0 30px;
     }
     .block-1 .bg h1 {
         font-size: 6.7em;
     }
+    /* Block 2 */
     .block-2 .content > .row .column-1 .wallet {
         width: 265px;
         height: 265px;
         top: 15%;
         left: 88%;
     }
+
+    /* Block 3 */
+    .block-3 .content .key {
+        width: 400px;
+        height: 400px;
+        top: 4%;
+        left: -11%;
+    }
+    .block-3 .content .plane {
+        width: 400px;
+        height: 400px;
+        bottom: 12%;
+        right: -16%;
+    }
+
+    /*Block 4*/
 
 }
