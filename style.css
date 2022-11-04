@@ -30,8 +30,19 @@ b, h2, h3 {
     display: inline-block;
     padding: 30px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.3em;
     text-align: center;
+    flex-shrink: 0;
+}
+.btn-blue {
+    background: #307FE2;
+    color: #F6F6F6;
+    display: inline-block;
+    padding: 30px;
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: center;
+    flex-shrink: 0;
 }
 
 
@@ -182,6 +193,17 @@ b, h2, h3 {
     margin-top: 25px;
     flex-shrink: 0;
 }
+.mark-rhomb-small-before::before {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    background: #93da49;
+    transform: rotate(-45deg);
+    margin-top: 25px;
+    flex-shrink: 0;
+}
 .check-icon-after::after {
     display: inline-block;
     content: "";
@@ -211,6 +233,25 @@ b, h2, h3 {
     margin-right: 20px;
     flex-shrink: 0;
 }
+.write-icon-after::after {
+    display: inline-block;
+    content: "";
+    background: url("images/write.png") center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    margin-left: 10px;
+    margin-bottom: -7px;
+}
+/**/
+.background-green {
+    background: #93DA49;
+    color: white;
+    text-align: center;
+    padding: 0 5px;
+}
+
 /**/
 
 /* Блок 1 */
@@ -1061,50 +1102,29 @@ b, h2, h3 {
 }
 
 /*Block 7 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Block 7 */
-
 .block-7 {
     margin-top: 100px;
 }
-
-.block-7 h2 {
-    color: #5E5E5E;
-    font-size: 52px;
+.block-7 .content {
+    align-items: center;
+}
+.block-7 .content > .title {
+    font-size: 3.7em;
+    max-width: 800px;
     text-align: center;
-    font-weight: 600;
 }
-
-.block-7 h2 b {
-    color: #1E1E1E;
-}
-
-.block-7 .features {
+.block-7 .content > .features {
     display: flex;
-    gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
     margin-top: 40px;
 }
 
-.block-7 .features > div {
+.block-7 .content > .features > div {
     background: #F7FFEF;
-    width: 345px;
-    height: 640px;
+    max-width: 345px;
+    min-height: 640px;
     border: solid 2px #EAF7DE;
     border-top: solid 4px #93DA49;
     display: flex;
@@ -1112,88 +1132,47 @@ b, h2, h3 {
     align-items: center;
     justify-content: space-between;
 }
-
-.block-7 .features > div .part-1 {
-    font-size: 22px;
-    font-weight: 600;
+.block-7 .content > .features > div .title {
+    font-size: 1.6em;
     text-align: center;
-    display: inline-block;
+    font-weight: 600;
     margin-top: 30px;
 }
-
-.block-7 .features > div .part-2 {
-    font-weight: 600;
-    font-size: 22px;
+.block-7 .content > .features > div .cost-title {
+    text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #93DA49;
-    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6em;
     text-align: center;
     margin-top: 20px;
-    text-transform: uppercase;
 }
-
-.block-7 .features > div .part-3 {
-    color: #93DA49;
-    font-size: 18px;
+.block-7 .content > .features > div .cost-subtitle {
+    font-size: 1.3em;
     font-weight: 600;
     text-align: center;
 }
-
-.block-7 .features > div .part-3.mark-bg {
-    background: #93DA49;
-    color: white;
-    text-align: center;
-    padding: 0 5px;
-}
-
-
-.block-7 .features > div .part-4 {
+.block-7 .content > .features > div .services {
     display: flex;
     flex-direction: column;
-    font-weight: 400;
-    font-size: 16px;
+    font-size: 1.1em;
     line-height: 2;
     margin-top: 25px;
 }
-
-.block-7 .features > div .part-4 b {
-    font-weight: 600;
-    color: #1E1E1E;
-}
-
-.block-7 .features > div .part-4 > span {
-    position: relative;
-    margin-top: 10px;
-}
-
-.block-7 .features > div .part-4 > span::before {
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    top: 13px;
-    left: -20px;
-    background: #93da49;
-    transform: rotate(-45deg);
-}
-
-.block-7 .features > div .part-5 {
-    font-weight: 600;
-    font-size: 18px;
+.block-7 .content > .features > div .result-title {
+    font-size: 1.3em;
     line-height: 2;
+    font-weight: 600;
     margin-top: 25px;
 }
-
-.block-7 .features > div .part-6 {
+.block-7 .content > .features > div .result-cost-title {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 1.9em;
     line-height: 2;
     letter-spacing: 0.1em;
     position: relative;
 }
-
-.block-7 .features > div .part-6::before {
+.block-7 .content > .features > div .result-cost-title::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -1202,87 +1181,44 @@ b, h2, h3 {
     top: 25px;
     transform: rotate(3deg);
 }
-
-.block-7 .features > div .part-7 {
-    font-size: 18px;
+.block-7 .content > .features > div .result-cost-subtitle {
+    font-size: 1.3em;
     line-height: 2;
     font-weight: 600;
-    color: #307FE2;
-    /*margin-bottom: 60px;*/
     flex-grow: 40;
 }
-
-.block-7 .features > div .part-8 {
+.block-7 .content > .features > div .btn-blue {
     width: 100%;
-    color: white;
-    background: #307FE2;
-    text-align: center;
-    font-weight: 600;
-    font-size: 16px;
+    font-size: 1.4em;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
 }
-
-.block-7 .features > div .part-8 span {
-    position: relative;
+.block-7 .content > .features > div > *:not(.btn-blue) {
+    margin: 10px 10px;
 }
 
-.block-7 .features > div .part-8 span::after {
-    position: absolute;
-    content: "";
-    background: url("images/write.png") center;
-    background-size: cover;
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    top: -10px;
-    right: -40px;
-}
-
-.block-7 .features > div > * {
-    flex-grow: 1;
-}
-
-
-.block-7 .down {
+.block-7 .content > .down {
     margin-top: 40px;
     display: flex;
     padding: 40px;
     align-items: center;
     background: #EAF7DE;
-    justify-content: center;
-    gap: 100px;
+    justify-content: space-between;
+    width: 95%;
+}
+.block-7 .content > .down .title {
+    font-size: 3.7em;
+    max-width: 400px;
+}
+.block-7 .content > .down .btn-blue {
+    font-size: 1.1em;
 }
 
-.block-7 .down h3 {
-    font-size: 52px;
-    font-weight: 600;
-    width: 400px;
-}
 
-.block-7 .down .btn-subscribe {
-    /*padding: 60px 20px;*/
-    color: white;
-    background: #307FE2;
-    font-size: 16px;
-    font-weight: 600;
-    width: 380px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.block-7 .down .btn-subscribe::after {
-    content: "";
-    background: url("images/write.png") center;
-    background-size: cover;
-    width: 26px;
-    height: 26px;
-    margin-left: 10px;
-}
+
 
 /* Block 8 */
 .block-8 {

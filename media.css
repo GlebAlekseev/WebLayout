@@ -245,7 +245,24 @@
     }
 
     /*Block 7 */
-
+    .block-7 .content > .title {
+        font-size: 2.6em;
+    }
+    .block-7 .content > .down .title {
+        font-size: 1.7em;
+        max-width: 400px;
+    }
+    .block-7 .content > .down {
+        flex-direction: column;
+        padding: 0;
+    }
+    .block-7 .content > .down .title {
+        padding: 30px;
+        text-align: center;
+    }
+    .block-7 .content > .down .btn-blue {
+        width: 100%;
+    }
 }
 
 /*@media (min-width: 992px) and (max-width: 1861px) {*/
