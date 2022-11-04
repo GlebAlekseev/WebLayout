@@ -26,9 +26,11 @@
     }
     .block-1 .content .header {
         flex-wrap: wrap;
+        gap: 0;
     }
     .block-1 .content .phone {
         width: 100%;
+        margin-top: 40px;
     }
     .block-1 .content .phone > * {
         width: 100%;
@@ -67,7 +69,6 @@
         background: url("images/stamp-icon-yellow.svg") ;
         width: 230px;
     }
-
     /* menu */
     .block-1 .content .header .menu {
         display: flex;
@@ -81,10 +82,89 @@
         display: flex;
     }
 
+    /* Block 2 */
+    .block-2 .content h2 {
+        font-size: 2.6em;
+    }
+    .block-2 .content > .row {
+        flex-direction: column;
+    }
+    .block-2 .content .title {
+        font-size: 5.2em;
+    }
+    .block-2 .content .describe {
+        font-size: 1.3em;
+    }
+    .block-2 .content .note {
+        font-size: 1.3em;
+    }
+    .block-2 .content > .row .column-1 .title {
+        max-width: 250px;
+    }
+    .block-2 .content > .row .column-2 .title {
+        word-break: normal;
+        max-width: 270px;
+    }
+    .block-2 .content > .row .column-2 .describe {
+        max-width: none;
+    }
+    .block-2 .content > .title {
+        align-self: start;
+    }
+    .block-2 .content > .title span{
+        max-width: 300px;
+        display: inline-block;
+    }
+    .block-2 .content > .describe {
+        align-self: start;
+        display: block;
+    }
+    .block-2 .content > .describe::before {
+        margin-bottom: 10px;
+    }
 
+    .block-2 .content > .message {
+        display: block;
+        text-align: center;
+    }
 
-
-
+    .block-2 .content > .message p {
+        font-size: 1.7em;
+    }
+    .block-2 .content > .message::before {
+        margin: 0 0 10px;
+    }
+    .block-2 .content > .message p .row-2 {
+        flex-direction: column;
+    }
+    .block-2 .content > .row  .title {
+        z-index: 1;
+        position: relative;
+    }
+    .block-2 .content > .row .column-1 .wallet {
+        width: 195px;
+        height: 195px;
+        top: 85%;
+        left: initial;
+        right: 0;
+    }
+    .block-2 .content > .row .column-1 .wallet::after {
+        top: -75px;
+        left: 45px;
+        font-size: 10.3em;
+        z-index: -1;
+    }
+    .block-2 .content > .title {
+        background: white;
+        width: calc(100% - 120px);
+        /*display: inline-block;*/
+    }
+    .block-2 .content > .title .hammer {
+        width: 300px;
+        height: 320px;
+        top: 5%;
+        left: 60%;
+    }
 }
 
 /*@media (min-width: 992px) and (max-width: 1861px) {*/
@@ -95,7 +175,11 @@
     .block-1 .bg h1 {
         font-size: 6.7em;
     }
-
-
+    .block-2 .content > .row .column-1 .wallet {
+        width: 265px;
+        height: 265px;
+        top: 15%;
+        left: 88%;
+    }
 
 }
