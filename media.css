@@ -210,6 +210,13 @@
     }
 
     /*Block 4*/
+    .block-4 .content > .title {
+        font-size: 2.6em;
+    }
+
+    /*Block 5*/
+
+
 
 }
 
@@ -245,5 +252,7 @@
     }
 
     /*Block 4*/
+    /*Block 5*/
+
 
 }
