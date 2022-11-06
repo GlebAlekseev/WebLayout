@@ -1,22 +1,25 @@
-
 /*@media (min-width: 360px) and (max-width: 991px) {*/
 @media (min-width: 360px) and (max-width: 999px) {
     /* Block 1 */
     .block-1 .wrapper {
         padding-bottom: 320px;
     }
+
     /* features */
     .block-1 .content .features {
         flex-direction: column;
         gap: 30px;
         align-items: center;
     }
+
     .block-1 .content .features li {
         width: 300px;
     }
+
     .block-1 .content .features {
         color: #5E5E5E;
     }
+
     /* wrapper = content + bg */
     /* content */
     .block-1 .content {
@@ -24,17 +27,21 @@
         padding: 10px;
         gap: 40px;
     }
+
     .block-1 .content .header {
         flex-wrap: wrap;
         gap: 0;
     }
+
     .block-1 .content .phone {
         width: 100%;
         margin-top: 40px;
     }
+
     .block-1 .content .phone > * {
         width: 100%;
     }
+
     .block-1 .content .title {
         color: #F6F6F6;
         margin-top: 60px;
@@ -43,42 +50,50 @@
     .block-1 .content .header .phone .order-call {
         display: block;
     }
+
     .block-1 .content .header .phone .order-call::before {
         background: url("images/phone-icon-yellow.svg") center;
         background-size: cover;
     }
+
     .block-1 .content .header .logotype {
         background: url("images/logo-white.svg") center;
         background-size: cover;
     }
-    .block-1 .content .describe{
+
+    .block-1 .content .describe {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
+
     /* bg */
     .block-1 .bg {
         clip-path: none;
     }
+
     .block-1 .bg > * {
         display: none;
     }
+
     .block-1 .bg .stamp {
         display: inline-block;
-        background: url("images/stamp-icon-yellow.svg") ;
+        background: url("images/stamp-icon-yellow.svg");
         width: 230px;
     }
+
     /* menu */
     .block-1 .content .header .menu {
         display: flex;
     }
+
     .block-1 .content .header .social {
         display: none;
     }
 
 
-    .block-1 .modal-menu.active  {
+    .block-1 .modal-menu.active {
         display: flex;
     }
 
@@ -86,39 +101,50 @@
     .block-2 .content h2 {
         font-size: 2.6em;
     }
+
     .block-2 .content > .row {
         flex-direction: column;
     }
+
     .block-2 .content .title {
         font-size: 5.2em;
     }
+
     .block-2 .content .describe {
         font-size: 1.3em;
     }
+
     .block-2 .content .note {
         font-size: 1.3em;
     }
+
     .block-2 .content > .row .column-1 .title {
         max-width: 250px;
     }
+
     .block-2 .content > .row .column-2 .title {
         word-break: normal;
         max-width: 270px;
     }
+
     .block-2 .content > .row .column-2 .describe {
         max-width: none;
     }
+
     .block-2 .content > .title {
         align-self: start;
     }
-    .block-2 .content > .title span{
+
+    .block-2 .content > .title span {
         max-width: 300px;
         display: inline-block;
     }
+
     .block-2 .content > .describe {
         align-self: start;
         display: block;
     }
+
     .block-2 .content > .describe::before {
         margin-bottom: 10px;
     }
@@ -131,16 +157,20 @@
     .block-2 .content > .message p {
         font-size: 1.7em;
     }
+
     .block-2 .content > .message::before {
         margin: 0 0 10px;
     }
+
     .block-2 .content > .message p .row-2 {
         flex-direction: column;
     }
-    .block-2 .content > .row  .title {
+
+    .block-2 .content > .row .title {
         z-index: 1;
         position: relative;
     }
+
     .block-2 .content > .row .column-1 .wallet {
         width: 195px;
         height: 195px;
@@ -148,16 +178,19 @@
         left: initial;
         right: 0;
     }
+
     .block-2 .content > .row .column-1 .wallet::after {
         top: -75px;
         left: 45px;
         font-size: 10.3em;
         z-index: -1;
     }
+
     .block-2 .content > .title {
         background: white;
         width: calc(100% - 120px);
     }
+
     .block-2 .content > .title .hammer {
         width: 300px;
         height: 320px;
@@ -169,6 +202,7 @@
     .block-3 .content .title {
         font-size: 2.6em;
     }
+
     .block-3 .content .subtitle {
         font-size: 1.4em;
     }
@@ -180,6 +214,7 @@
         /*left: -26%;*/
         left: -95px;
     }
+
     .block-3 .content .plane {
         width: 380px;
         height: 380px;
@@ -196,10 +231,12 @@
         max-width: 700px;
         padding: 20px 0;
     }
+
     .block-3 .content .features > div:nth-child(1) {
         align-self: end;
         margin-left: 120px;
     }
+
     .block-3 .content .features > div:nth-child(2) {
         align-self: start;
         margin-right: 120px;
@@ -219,27 +256,30 @@
         font-size: 3.4em;
         align-self: center;
         max-width: 580px;
-
     }
+
     .block-5 .content > .describe {
         font-size: 1.7em;
         text-align: center;
         display: block;
         align-self: center;
     }
+
     /*Block 6*/
     .block-6 .content > .title {
         font-size: 2.6em;
         max-width: 390px;
     }
 
-    .block-6 .bg *:not(.stamp){
+    .block-6 .bg *:not(.stamp) {
         display: none;
     }
+
     .block-6 .content > .features > div {
         display: block;
         text-align: center;
     }
+
     .block-6 .content > .features > div .feature-wrapper {
         margin-top: 10px;
     }
@@ -248,84 +288,93 @@
     .block-7 .content > .title {
         font-size: 2.6em;
     }
+
     .block-7 .content > .down .title {
         font-size: 1.7em;
         max-width: 400px;
     }
+
     .block-7 .content > .down {
         flex-direction: column;
         padding: 0;
     }
+
     .block-7 .content > .down .title {
         padding: 30px;
         text-align: center;
     }
+
     .block-7 .content > .down .btn-blue {
         width: 100%;
     }
+
     /*Block 8 */
     .block-8 .content .title {
         font-size: 2.6em;
     }
+
     .block-8 .content .describe {
         font-size: 1.3em;
     }
+
     .block-8 .content {
         align-items: center;
         text-align: center;
     }
+
     .block-8 .content .column {
         margin-right: 0;
         padding: 160px 0;
     }
 
-    .block-8 .content .column .btn-yellow{
+    .block-8 .content .column .btn-yellow {
         /*flex-grow: 1;*/
         margin-top: 420px;
     }
+
     .block-8 .container .poster {
         width: 460px;
         height: 370px;
         left: calc(50% - 305px);
         top: -410px;
     }
+
     /*Block 9*/
-    /*.block-9 .content .slider::before {*/
-    /*    width: 63px;*/
-    /*    height: 63px;*/
-    /*    !*top: calc(50% - 53px);*!*/
-    /*    left: -15px;*/
-    /*    top: 115%;*/
-    /*}*/
     .block-9 .content .slider .page-number {
         display: flex;
 
     }
-    .block-9 .content .slider .page-number::before{
+
+    .block-9 .content .slider .page-number::before {
         position: static;
         display: inline-block;
         width: 63px;
         height: 63px;
         margin-right: 20px;
     }
-    .block-9 .content .slider .page-number::after{
+
+    .block-9 .content .slider .page-number::after {
         position: static;
         display: inline-block;
         width: 63px;
         height: 63px;
         margin-left: 20px;
     }
+
     .block-9 .content .title {
         font-size: 3.4em;
         max-width: 610px;
         hyphens: auto;
     }
+
     .block-9 .content .title span {
         font-size: 24px;
     }
+
     .block-9 .content .title span {
         display: block;
     }
+
     .block-9 .bg .down {
         display: none;
     }
@@ -334,35 +383,41 @@
         top: -290px;
         left: -50px;
     }
+
     .block-9 .bg .up .element-3 {
         display: none;
     }
+
     .block-9 .bg .up .element-4 {
         display: none;
     }
+
     .block-9 .bg .up .element-5 {
         display: none;
     }
+
     .block-9 .bg .up .element-7 {
         display: none;
     }
+
     /*Block 10*/
-
-
-
     .block-10 .content {
         align-items: center;
     }
+
     .block-10 .content .column {
         text-align: center;
         align-items: center;
     }
+
     .block-10 .content .column .title {
         font-size: 2.6em;
     }
-    .block-10 .content .column .btn-yellow{
+
+    .block-10 .content .column .btn-yellow {
         margin-top: 500px;
     }
+
     .block-10 .content .column .btn-yellow .home {
         background: url("images/b10-home-2.png") center;
         background-size: cover;
@@ -376,18 +431,22 @@
     .block-12 .content > .title {
         font-size: 2.6em;
     }
+
     .block-12 .content .features > div {
         flex-direction: column;
         text-align: center;
         gap: 40px;
     }
+
     .block-12 .content .features > div .rhomb-blue-before {
         margin-left: 0;
     }
+
     /*Block 13*/
     .block-13 .content .title {
         font-size: 2.6em;
     }
+
     .block-13 .content .subtitle {
         font-size: 2.4em;
     }
@@ -398,12 +457,14 @@
         align-self: center;
         text-align: center;
     }
+
     .block-14 .content > .subtitle {
         font-size: 3.4em;
         align-self: center;
         text-align: center;
         margin-top: 40px;
     }
+
     .block-14 .content > .features {
         display: flex;
         gap: 40px;
@@ -413,6 +474,7 @@
         align-items: center;
         text-align: center;
     }
+
     .block-14 .content > .features > div .title {
         align-items: center;
     }
@@ -423,11 +485,13 @@
         align-items: center;
 
     }
+
     .block-16 .content > .column .title {
         text-align: center;
         align-self: center;
         font-size: 2.6em;
     }
+
     .block-16 .content > .column .describe {
         font-size: 2.3em;
         text-align: center;
@@ -444,25 +508,28 @@
         bottom: 295px;
         left: -65px;
     }
+
     .block-16 .content > .column .btn-yellow .column {
         right: 0;
         max-width: 100%;
         top: -255%;
     }
+
     .block-16 .content > .column .btn-yellow .column .row-1 {
         width: 100%;
         background: linear-gradient(113.84deg, #307FE2 0%, #3197F4 100%);
     }
+
     .block-16 .content > .column .btn-yellow .column .row-2 {
         width: 100%;
         background: linear-gradient(113.84deg, #307FE2 0%, #3197F4 100%);
     }
 
     /*Block 17*/
-
     .block-17 .content > .title {
         font-size: 2.6em;
     }
+
     .block-17 .content .features > div {
         display: flex;
         flex-direction: column;
@@ -470,23 +537,23 @@
         align-items: center;
         text-align: center;
     }
-    /*Block 18*/
 
+    /*Block 18*/
     .block-18 .content .column .btn-yellow {
         margin-top: 400px;
     }
+
     .block-18 .bg {
         clip-path: ellipse(190% 50% at 50% 50%);
     }
+
     .block-18 .content .column .title {
         font-size: 2.6em;
     }
+
     .block-18 .content .column .describe {
         font-size: 1.4em;
     }
-
-
-
 
     .block-18 .content .column .btn-yellow .wallet-1 {
         width: 500px;
@@ -506,15 +573,18 @@
     .block-19 .content .column {
         align-items: center;
     }
+
     .block-19 .content .column .title {
         font-size: 2.6em;
         text-align: center;
         max-width: 350px;
 
     }
-    .block-19 .content .column .title span{
+
+    .block-19 .content .column .title span {
         font-size: 44px;
     }
+
     .block-19 .content .column > .describe {
         font-size: 1.3em;
         display: flex;
@@ -523,9 +593,11 @@
         gap: 20px;
         margin-left: -100px;
     }
+
     .block-19 .content .column > .row .contact > .row-1 {
         flex-direction: column;
     }
+
     .block-19 .content .column > .row .contact > .row-2 {
         flex-direction: column;
     }
@@ -534,6 +606,7 @@
         flex-direction: column;
         text-align: center;
     }
+
     .block-19 .content .column > .row .social {
         align-self: center;
     }
@@ -541,6 +614,7 @@
     .block-19 .container.down .column {
         width: 100%;
     }
+
     .block-19 .container.down .column .info {
         flex-direction: column;
         align-items: center;
@@ -561,9 +635,11 @@
     .block-1 .content .header {
         padding: 0 30px;
     }
+
     .block-1 .bg h1 {
         font-size: 6.7em;
     }
+
     /* Block 2 */
     .block-2 .content > .row .column-1 .wallet {
         width: 265px;
@@ -579,6 +655,7 @@
         top: 4%;
         left: -11%;
     }
+
     .block-3 .content .plane {
         width: 400px;
         height: 400px;
@@ -594,6 +671,7 @@
     .block-8 .content {
         align-items: start;
     }
+
     .block-8 .container .poster {
         width: 640px;
         height: 510px;
@@ -601,18 +679,21 @@
         left: 270px;
         top: -410px;
     }
-    .block-8 .content .column .describe{
+
+    .block-8 .content .column .describe {
         max-width: 370px;
     }
+
     .block-8 .content .column .btn-yellow {
         max-width: 420px;
     }
+
     .block-8 .bg::before {
         clip-path: ellipse(120% 33% at 50% -30%);
     }
-    /*Block 9*/
 
-    .block-9 .content .slider .page-number::before{
+    /*Block 9*/
+    .block-9 .content .slider .page-number::before {
         content: "";
         background: url("images/turn-left-icon.svg") center;
         background-size: cover;
@@ -622,7 +703,8 @@
         top: calc(50% - 153px);
         left: -15px;
     }
-    .block-9 .content .slider .page-number::after{
+
+    .block-9 .content .slider .page-number::after {
         content: "";
         background: url("images/turn-right-icon.svg") center;
         background-size: cover;
@@ -632,13 +714,16 @@
         top: calc(50% - 153px);
         right: -1%;
     }
+
     /*Block 10*/
     .block-10 .content {
         align-items: start;
     }
+
     .block-10 .content .column {
         max-width: 550px;
     }
+
     .block-10 .content .column .btn-yellow .home {
         left: 500px;
         top: -285px;
@@ -651,7 +736,6 @@
     /*Block 12*/
     /*Block 13*/
     /*Block 14*/
-
     /*Block 15*/
     /*Block 16*/
     .block-16 .content > .column .title {
@@ -664,6 +748,7 @@
         bottom: 145px;
         right: -920px;
     }
+
     .block-16 .content > .column .btn-yellow .column {
         position: absolute;
         display: flex;
@@ -673,17 +758,19 @@
         max-width: 1200px;
         width: 460px;
     }
+
     .block-16 .content > .column .btn-yellow .column .row-1 {
         align-self: end;
         max-width: 400px;
     }
+
     .block-16 .content > .column .btn-yellow .column .row-2 {
         align-self: start;
         max-width: 425px;
     }
+
     /*Block 17*/
     /*Block 18*/
-
     .block-18 .content .column .btn-yellow .wallet-1 {
         top: -250px;
         left: -650px;
