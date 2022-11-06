@@ -1305,13 +1305,10 @@ b, h2, h3 {
     display: block;
 }
 
-
-
 .block-9 .content .slider {
     margin-top: 200px;
     position: relative;
     max-width: 1100px;
-    /*margin-bottom: 150px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1321,7 +1318,7 @@ b, h2, h3 {
 .block-9 .content .slider .items .item {
     display: none;
     width: 100%;
-    box-shadow: 0px 18px 145px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 18px 145px rgba(0, 0, 0, 0.1);
 }
 .block-9 .content .slider .items .item.current {
     display: block;
@@ -1425,7 +1422,7 @@ b, h2, h3 {
     width: 230px;
     height: 350px;
     right: -400px;
-    top: 0px;
+    top: 0;
     position: absolute;
 }
 
@@ -1503,80 +1500,53 @@ b, h2, h3 {
     right: -0px;
     position: absolute;
 }
+/*Block 10*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Block 10 */
-
-.block-10 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 20px 0;
-    background: #307FE2;
+.block-10 {
+    margin-top: 100px;
 }
-
-.block-10 .content .left {
+.block-10 .wrapper {
+}
+.block-10 .bg {
+    background: #307FE2;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    z-index: -1;
+}
+.block-10 .content {
+    align-items: end;
+    margin: 0 20px;
+}
+.block-10 .content .column {
+    max-width: 709px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 140px 0;
+}
+.block-10 .content .column .title {
+    font-size: 3.7em;
+}
+.block-10 .content .column .describe {
+    font-size: 2.3em;
+}
+.block-10 .content .column .btn-yellow {
+    margin-top: 40px;
+    padding: 30px 80px;
+    position: relative;
+}
+.block-10 .content .column .btn-yellow .home {
+    position: absolute;
     background: url("images/b10-home.png") center;
     background-size: cover;
     width: 560px;
     height: 520px;
+    left: -600px;
+    top: -380px;
 }
 
-.block-10 .content .right {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    width: 710px;
-
-}
-
-.block-10 .content .right h2 {
-    font-size: 52px;
-    font-weight: 600;
-}
-
-.block-10 .content .right span {
-    font-weight: 500;
-    font-size: 30px;
-    margin-top: 20px;
-}
 
 /* Block 11 skip */
 
