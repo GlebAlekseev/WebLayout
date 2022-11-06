@@ -2002,93 +2002,71 @@ b, h2, h3 {
 
 /* Block -18 */
 
+/*.block-18 {*/
+/*    margin-top: 100px;*/
+/*}*/
+
+.block-18 .wrapper {
+    padding: 90px 0;
+}
+
 .block-18 .bg {
-    width: 100%;
-    height: calc(100% - 400px);
     position: absolute;
-}
-
-.block-18 .container-wrapper {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 180px);
+    background: #307FE2;
     clip-path: ellipse(80% 50% at 50% 50%);
-    background: #307fe2;
 }
-
-.block-18 .bg .wallet-1 {
+.block-18 .content {
+    align-items: center;
+    padding: 60px 0;
+    margin: 0 20px;
+}
+.block-18 .content .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+}
+.block-18 .content .column .title {
+    font-size: 3.7em;
+    text-align: center;
+    max-width: 800px;
+}
+.block-18 .content .column .describe {
+    max-width: 675px;
+    font-size: 1.7em;
+    text-align: center;
+}
+.block-18 .content .column .btn-yellow {
+    position: relative;
+}
+.block-18 .content .column .btn-yellow .wallet-1 {
     position: absolute;
-    width: 832px;
-    height: 824px;
+    width: 750px;
+    height: 500px;
     background: url("images/b18wallet-1.png") center;
     background-size: cover;
     z-index: 11;
-    top: -100px;
-    left: -20px;
+    top: -250px;
+    left: -750px;
+
 }
 
-.block-18 .bg .wallet-2 {
+.block-18 .content .column .btn-yellow .wallet-2 {
     position: absolute;
     width: 650px;
     height: 390px;
     background: url("images/b18wallet-2.png") center;
     background-size: cover;
     z-index: 11;
-    top: -100px;
-    right: -20px;
-}
-
-.block-18 .bg .glow-1 {
-    position: absolute;
-    width: 370px;
-    height: 420px;
-    background: #3FA3FF;
-    filter: blur(92.5px);
-    top: 80px;
-    left: 190px;
-    z-index: 10;
-}
-
-.block-18 .bg .glow-2 {
-    position: absolute;
-    width: 390px;
-    height: 340px;
-    background: #3FA3FF;
-    filter: blur(92.5px);
-    top: 80px;
-    right: 140px;
-    z-index: 10;
+    top: -500px;
+    right: -800px;
 }
 
 
-.block-18 .wrapper {
-    padding: 200px 0;
-    position: relative;
-    z-index: -1;
-}
 
-.block-18 .content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    color: white;
-}
-
-.block-18 .content h2 {
-    width: 800px;
-    text-align: center;
-    font-size: 52px;
-    font-weight: 600;
-}
-
-.block-18 .content p {
-    margin-top: 60px;
-    width: 675px;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-}
 
 /* Block 19 */
 .block-19 {

@@ -470,8 +470,37 @@
         align-items: center;
         text-align: center;
     }
+    /*Block 18*/
+
+    .block-18 .content .column .btn-yellow {
+        margin-top: 400px;
+    }
+    .block-18 .bg {
+        clip-path: ellipse(190% 50% at 50% 50%);
+    }
+    .block-18 .content .column .title {
+        font-size: 2.6em;
+    }
+    .block-18 .content .column .describe {
+        font-size: 1.4em;
+    }
 
 
+
+
+    .block-18 .content .column .btn-yellow .wallet-1 {
+        width: 500px;
+        height: 400px;
+        top: -510px;
+        left: -150px;
+    }
+
+    .block-18 .content .column .btn-yellow .wallet-2 {
+        width: 390px;
+        height: 260px;
+        top: -260px;
+        left: 40px;
+    }
 
 }
 
@@ -601,5 +630,16 @@
         align-self: start;
         max-width: 425px;
     }
+    /*Block 17*/
+    /*Block 18*/
 
+    .block-18 .content .column .btn-yellow .wallet-1 {
+        top: -250px;
+        left: -650px;
+    }
+
+    .block-18 .content .column .btn-yellow .wallet-2 {
+        top: -550px;
+        right: -650px;
+    }
 }
