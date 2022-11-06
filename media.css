@@ -458,6 +458,21 @@
         background: linear-gradient(113.84deg, #307FE2 0%, #3197F4 100%);
     }
 
+    /*Block 17*/
+
+    .block-17 .content > .title {
+        font-size: 2.6em;
+    }
+    .block-17 .content .features > div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
 }
 
 /*@media (min-width: 992px) and (max-width: 1861px) {*/
