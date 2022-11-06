@@ -384,6 +384,16 @@
     .block-12 .content .features > div .rhomb-blue-before {
         margin-left: 0;
     }
+    /*Block 13*/
+    .block-13 .content .title {
+        font-size: 2.6em;
+    }
+    .block-13 .content .subtitle {
+        font-size: 2.4em;
+    }
+
+    /*Block 14*/
+
 }
 
 /*@media (min-width: 992px) and (max-width: 1861px) {*/
@@ -480,7 +490,8 @@
     }
 
     /*Block 12*/
-
+    /*Block 13*/
+    /*Block 14*/
 
 
 }
