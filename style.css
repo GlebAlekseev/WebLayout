@@ -244,6 +244,19 @@ b, h2, h3 {
     margin-left: 10px;
     margin-bottom: -7px;
 }
+.rhomb-blue-before::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #D0E5FF;
+    transform: rotate(45deg);
+    left: -16px;
+    top: -11px;
+    z-index: -1;
+}
+
+
 /**/
 .background-green {
     background: #93DA49;
@@ -1550,74 +1563,49 @@ b, h2, h3 {
 
 /* Block 11 skip */
 
-/* Block 12 */
+
+/*Block 12*/
+
+
 .block-12 {
-    margin-top: 60px;
+    margin-top: 100px;
 }
-
 .block-12 .content {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-}
+    margin: 0 20px;
 
-.block-12 .content h2 {
-    font-weight: 600;
-    font-size: 52px;
+}
+.block-12 .content > .title {
+    font-size: 3.7em;
     text-align: center;
 }
-
 .block-12 .content .features {
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin-top: 60px;
-    align-items: center;
 }
-
-.block-12 .content .features .feature {
+.block-12 .content .features > div {
     display: flex;
-    gap: 90px;
     align-items: center;
+    gap: 60px;
 }
-
-.block-12 .content .features .feature .left {
-    color: #307FE2;
+.block-12 .content .features > div .rhomb-blue-before {
     position: relative;
-    /*margin-left: 25px;*/
-    margin-left: 30px;
+    margin-left: 20px;
 }
-
-.block-12 .content .features .feature .left::before {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #D0E5FF;
-    transform: rotate(45deg);
-    left: -16px;
-    top: -11px;
-    z-index: -1;
-}
-
-.block-12 .content .features .feature .right {
+.block-12 .content .features > div .feature-wrapper {
     display: flex;
     flex-direction: column;
-    color: black;
-    width: 800px;
+    gap: 10px;
 }
-
-.block-12 .content .features .feature .right h3 {
-    font-weight: 600;
-    font-size: 24px;
+.block-12 .content .features > div .feature-wrapper .title {
+    font-size: 1.7em;
 }
-
-.block-12 .content .features .feature .right p {
-    font-weight: 400;
-    font-size: 16px;
+.block-12 .content .features > div .feature-wrapper .describe {
     line-height: 2;
+    font-size: 1.1em;
 }
-
 
 .block-12 .content .stamp {
     margin-top: 100px;
@@ -1626,6 +1614,15 @@ b, h2, h3 {
     background: url("images/stamp-icon.svg");
     background-size: cover;
 }
+
+
+
+
+
+
+
+
+
 
 
 /* Block 13*/

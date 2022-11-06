@@ -373,7 +373,17 @@
     }
 
     /*Block 12*/
-
+    .block-12 .content > .title {
+        font-size: 2.6em;
+    }
+    .block-12 .content .features > div {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .block-12 .content .features > div .rhomb-blue-before {
+        margin-left: 0;
+    }
 }
 
 /*@media (min-width: 992px) and (max-width: 1861px) {*/
