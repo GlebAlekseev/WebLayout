@@ -290,6 +290,63 @@
         top: -410px;
     }
     /*Block 9*/
+    /*.block-9 .content .slider::before {*/
+    /*    width: 63px;*/
+    /*    height: 63px;*/
+    /*    !*top: calc(50% - 53px);*!*/
+    /*    left: -15px;*/
+    /*    top: 115%;*/
+    /*}*/
+    .block-9 .content .slider .page-number {
+        display: flex;
+
+    }
+    .block-9 .content .slider .page-number::before{
+        position: static;
+        display: inline-block;
+        width: 63px;
+        height: 63px;
+        margin-right: 20px;
+    }
+    .block-9 .content .slider .page-number::after{
+        position: static;
+        display: inline-block;
+        width: 63px;
+        height: 63px;
+        margin-left: 20px;
+    }
+    .block-9 .content .title {
+        font-size: 3.4em;
+        max-width: 610px;
+        hyphens: auto;
+    }
+    .block-9 .content .title span {
+        font-size: 24px;
+    }
+    .block-9 .content .title span {
+        display: block;
+    }
+    .block-9 .bg .down {
+        display: none;
+    }
+
+    .block-9 .bg .up .element-1 {
+        top: -290px;
+        left: -50px;
+    }
+    .block-9 .bg .up .element-3 {
+        display: none;
+    }
+    .block-9 .bg .up .element-4 {
+        display: none;
+    }
+    .block-9 .bg .up .element-5 {
+        display: none;
+    }
+    .block-9 .bg .up .element-7 {
+        display: none;
+    }
+
 
 
 
@@ -351,5 +408,30 @@
         clip-path: ellipse(120% 33% at 50% -30%);
     }
     /*Block 9*/
+
+    .block-9 .content .slider .page-number::before{
+        content: "";
+        background: url("images/turn-left-icon.svg") center;
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: calc(50% - 153px);
+        left: -15px;
+    }
+    .block-9 .content .slider .page-number::after{
+        content: "";
+        background: url("images/turn-right-icon.svg") center;
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: calc(50% - 153px);
+        right: -1%;
+    }
+
+
+
+
 
 }

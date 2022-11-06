@@ -1274,224 +1274,78 @@ b, h2, h3 {
 /*Block 9*/
 
 
-
-
-
-
-
-
 .block-9 {
     margin-top: -80px;
 }
 
 .block-9 .wrapper {
-    position: relative;
     background: white;
+
     clip-path: ellipse(150% 75% at 50% 75%);
 }
 
-/* bg */
-/* up */
-.block-9 .bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    margin-top: -50px;
-}
-
-.block-9 .bg::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.block-9 .bg > .up > div {
-    position: absolute;
-    top: 0;
-}
-
-.block-9 .bg > .down > div {
-    position: absolute;
-    bottom: 0;
-}
-
-.block-9 .bg .up .element-1 {
-    background: url("images/b9up1.png") center;
-    background-size: cover;
-    width: 310px;
-    height: 180px;
-    top: 175px;
-    left: 100px;
-}
-
-.block-9 .bg .up .element-2 {
-    background: url("images/b9up2.png") center;
-    background-size: cover;
-    width: 410px;
-    height: 320px;
-    left: 700px;
-}
-
-.block-9 .bg .up .element-3 {
-    background: url("images/b9up3.png") center;
-    background-size: cover;
-    width: 230px;
-    height: 350px;
-    right: 100px;
-    top: 200px;
-}
-
-.block-9 .bg .up .element-4 {
-    background: url("images/b9up4.png") center;
-    background-size: cover;
-    width: 250px;
-    height: 100px;
-    top: 600px;
-    left: 150px;
-}
-
-.block-9 .bg .up .element-5 {
-    background: url("images/b9up5.png") center;
-    background-size: cover;
-    width: 330px;
-    height: 510px;
-    top: 400px;
-    right: 120px;
-    z-index: 10;
-}
-
-.block-9 .bg .up .element-6 {
-    background: url("images/b9up6.png") center;
-    background-size: cover;
-    width: 470px;
-    height: 500px;
-    right: 300px;
-    top: -100px;
-}
-
-.block-9 .bg .up .element-7 {
-    background: url("images/b9up7.png") center;
-    background-size: cover;
-    width: 470px;
-    height: 500px;
-    top: -300px;
-    left: 250px;
-}
-
-/* down */
-.block-9 .bg .down .element-1 {
-    background: url("images/b9down1.png") center;
-    background-size: cover;
-    width: 260px;
-    height: 320px;
-    bottom: 100px;
-    right: 100px;
-}
-
-.block-9 .bg .down .element-2 {
-    background: url("images/b9down2.png") center;
-    background-size: cover;
-    width: 160px;
-    height: 210px;
-    bottom: 400px;
-    left: 50px;
-}
-
-.block-9 .bg .down .element-3 {
-    background: url("images/b9down3.png") center;
-    background-size: cover;
-    width: 1020px;
-    height: 350px;
-    bottom: 75px;
-    left: 450px;
-}
-
-
-.block-9 .wrapper .content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.block-9 .content {
     align-items: center;
+    margin: 0 20px;
+    padding-bottom: 100px;
 }
-
-.block-9 .content h2 {
-    font-weight: 600;
-    font-size: 96px;
+.block-9 .content .title {
+    font-size: 6.7em;
     letter-spacing: 0.1em;
-    color: #307FE2;
-    margin-top: 200px;
+    font-weight: 600;
+    text-transform: uppercase;
+    max-width: 950px;
+    margin-top: 300px;
+    position: relative;
+}
+.block-9 .content .title span {
+    font-size: 48px;
+}
+.block-9 .content .title span:first-child {
+    display: block;
 }
 
-.block-9 .content h2 b {
-    font-size: 48px;
-    color: #F9E547;
-}
+
 
 .block-9 .content .slider {
     margin-top: 200px;
-    width: 1100px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.block-9 .content .slider .main {
-    width: 100%;
-    height: 790px;
-    background: purple;
     position: relative;
-    background: url("images/b9-scan-1.png") center;
-    background-size: cover;
-    box-shadow: 0px 18px 145px rgba(0, 0, 0, 0.1);
-}
-
-.block-9 .content .slider .main::before {
-    content: "";
-    background: url("images/turn-left-icon.svg") center;
-    background-size: cover;
-    width: 107px;
-    height: 107px;
-    position: absolute;
-    top: calc(50% - 53px);
-    left: -70px;
-}
-
-.block-9 .content .slider .main::after {
-    content: "";
-    background: url("images/turn-right-icon.svg") center;
-    background-size: cover;
-    width: 107px;
-    height: 107px;
-    position: absolute;
-    top: calc(50% - 53px);
-    right: -70px;
-}
-
-
-.block-9 .content .slider .pagination {
-    height: 100px;
-    width: 100%;
-    margin-top: 20px;
+    max-width: 1100px;
+    /*margin-bottom: 150px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 200px;
+    gap: 40px;
+    padding-bottom: 60px;
 }
-
+.block-9 .content .slider .items .item {
+    display: none;
+    width: 100%;
+    box-shadow: 0px 18px 145px rgba(0, 0, 0, 0.1);
+}
+.block-9 .content .slider .items .item.current {
+    display: block;
+}
+.block-9 .content .slider .pagination {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 150px;
+}
 .block-9 .content .slider .pagination .elements {
     width: 100%;
     height: 5px;
-    background: orange;
+    background: blue;
+    margin-top: 10px;
     display: flex;
 }
-
 .block-9 .content .slider .pagination .elements .element {
     height: 100%;
     flex: 1;
 }
-
 .block-9 .content .slider .pagination .elements .element:nth-child(2n) {
     background: lightgray;
 }
@@ -1504,22 +1358,186 @@ b, h2, h3 {
     background: #307FE2;
 }
 
-
-.block-9 .content .slider .pagination .page-number {
+.block-9 .content .slider .page-number {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.7em;
     letter-spacing: 0.1em;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
-.block-9 .content .slider .pagination .page-number b:first-child {
+.block-9 .content .slider .page-number b {
     font-size: 48px;
-    color: #307FE2;
+}
+.block-9 .content .slider .decoration {
+    position: absolute;
+    z-index: -1;
+    top: -4.5%;
+    left: 39%;
+    width: 21%;
+    height: 16%;
 }
 
-.block-9 .content .slider .pagination .page-number b:last-child {
-    font-size: 48px;
+.block-9 .content .slider .page-number::before{
+    content: "";
+    background: url("images/turn-left-icon.svg") center;
+    background-size: cover;
+    width: 107px;
+    height: 107px;
+    position: absolute;
+    top: calc(50% - 153px);
+    left: -70px;
 }
+.block-9 .content .slider .page-number::after{
+    content: "";
+    background: url("images/turn-right-icon.svg") center;
+    background-size: cover;
+    width: 107px;
+    height: 107px;
+    position: absolute;
+    top: calc(50% - 153px);
+    right: -70px;
+}
+
+
+.block-9 .bg .up .element-1 {
+    background: url("images/b9up1.png") center;
+    background-size: cover;
+    width: 310px;
+    height: 180px;
+    top: -40px;
+    left: -500px;
+    position: absolute;
+}
+
+.block-9 .bg .up .element-2 {
+    background: url("images/b9up2.png") center;
+    background-size: cover;
+    width: 410px;
+    height: 320px;
+    top: -350px;
+    left: 220px;
+    position: absolute;
+}
+
+.block-9 .bg .up .element-3 {
+    background: url("images/b9up3.png") center;
+    background-size: cover;
+    width: 230px;
+    height: 350px;
+    right: -400px;
+    top: 0px;
+    position: absolute;
+}
+
+.block-9 .bg .up .element-4 {
+    background: url("images/b9up4.png") center;
+    background-size: cover;
+    width: 250px;
+    height: 100px;
+    top: 400px;
+    left: -375px;
+    position: absolute;
+}
+
+.block-9 .bg .up .element-5 {
+    background: url("images/b9up5.png") center;
+    background-size: cover;
+    width: 330px;
+    height: 510px;
+    top: 140px;
+    right: -360px;
+    z-index: 10;
+    position: absolute;
+}
+
+.block-9 .bg .up .element-6 {
+    background: url("images/b9up6.png") center;
+    background-size: cover;
+    width: 470px;
+    height: 500px;
+    right: -250px;
+    top: -450px;
+    position: absolute;
+}
+
+.block-9 .bg .up .element-7 {
+    background: url("images/b9up7.png") center;
+    background-size: cover;
+    width: 470px;
+    height: 500px;
+    right: 850px;
+    top: -550px;
+    position: absolute;
+
+}
+
+/* down */
+.block-9 .bg .down .element-1 {
+    background: url("images/b9down1.png") center;
+    background-size: cover;
+    width: 260px;
+    height: 320px;
+    bottom: -1200px;
+    right: -450px;
+    position: absolute;
+
+}
+
+.block-9 .bg .down .element-2 {
+    background: url("images/b9down2.png") center;
+    background-size: cover;
+    width: 160px;
+    height: 210px;
+    bottom: -950px;
+    right: 1150px;
+    position: absolute;
+
+}
+
+.block-9 .bg .down .element-3 {
+    background: url("images/b9down3.png") center;
+    background-size: cover;
+    width: 1020px;
+    height: 350px;
+    bottom: -1250px;
+    right: -0px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Block 10 */
 
