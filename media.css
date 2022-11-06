@@ -393,6 +393,29 @@
     }
 
     /*Block 14*/
+    .block-14 .content > .title {
+        font-size: 2.6em;
+        align-self: center;
+        text-align: center;
+    }
+    .block-14 .content > .subtitle {
+        font-size: 3.4em;
+        align-self: center;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .block-14 .content > .features {
+        display: flex;
+        gap: 40px;
+        margin-top: 90px;
+        font-weight: 600;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .block-14 .content > .features > div .title {
+        align-items: center;
+    }
 
 }
 

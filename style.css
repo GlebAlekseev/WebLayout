@@ -1658,80 +1658,85 @@ b, h2, h3 {
 }
 
 .block-14 .content {
-    display: flex;
-    flex-direction: column;
     padding: 0 80px;
 }
-
-.block-14 .content .part-1 {
-    font-weight: 600;
-    font-size: 64px;
+.block-14 .content > .title {
+    font-size: 4.6em;
     letter-spacing: 0.1em;
-    color: #307FE2;
-    width: 500px;
-}
-
-.block-14 .content .part-2 {
-    font-weight: 600;
-    font-size: 96px;
-    letter-spacing: 0.1em;
-    color: #307FE2;
+    align-self: start;
     text-transform: uppercase;
-    margin-left: 300px;
-    margin-top: 30px;
 }
-
-.block-14 .content .features {
+.block-14 .content > .subtitle {
+    font-size: 6.7em;
+    letter-spacing: 0.1em;
+    align-self: end;
+    text-transform: uppercase;
+    margin-top: 90px;
+}
+.block-14 .content > .features {
     display: flex;
-    gap: 70px;
-    margin-top: 60px;
+    gap: 40px;
+    margin-top: 90px;
+    font-weight: 600;
 }
-
-.block-14 .content .features .feature {
+.block-14 .content > .features > div {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-grow: 1;
+
 }
-
-
-.block-14 .content .features .feature .title {
-    color: #93DA49;
-    letter-spacing: 0.1em;
-    font-size: 36px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-
-.block-14 .content .features .feature .describe {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 2;
-}
-
-.block-14 .content .features .feature .icon {
+.block-14 .content > .features > div .title:before {
+    display: inline-block;
+    content: "";
     width: 46px;
     height: 46px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
 }
-
-.block-14 .content .features .feature:nth-child(1) .icon {
+.block-14 .content > .features > div:nth-child(1) .title:before{
     background: url("images/b14icon1.svg") center;
     background-size: cover;
 }
-
-.block-14 .content .features .feature:nth-child(2) .icon {
+.block-14 .content > .features > div:nth-child(2) .title:before{
     background: url("images/b14icon2.svg") center;
     background-size: cover;
 }
-
-.block-14 .content .features .feature:nth-child(3) .icon {
+.block-14 .content > .features > div:nth-child(3) .title:before{
     background: url("images/b14icon3.svg") center;
     background-size: cover;
 }
-
-.block-14 .content .features .feature:nth-child(4) .icon {
+.block-14 .content > .features > div:nth-child(4) .title:before{
     background: url("images/b14icon4.svg") center;
     background-size: cover;
 }
+
+.block-14 .content > .features > div .title {
+    font-size: 2.6em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+}
+.block-14 .content > .features > div .describe {
+    line-height: 2;
+    font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Block 15 */
 .block-15 {
