@@ -1,0 +1,148 @@
+#overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 20;
+    transition: .3s all;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+
+    width: 100%;
+    max-width: 500px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+
+    padding: 60px;
+    background: white;
+    transition: 0.3s all;
+}
+
+.modal .cross-icon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    fill: #307FE2;
+    cursor: pointer;
+}
+
+.modal.active,
+#overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Custom modals */
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+/* Общее */
+
+.modal {
+    max-width: 700px;
+}
+.modal .content {
+    gap: 40px;
+}
+.modal .content .title{
+    font-size: 3.7em;
+}
+.modal .content .describe{
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+.modal .content .form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.modal .content .form input{
+    width: 100%;
+    background: #D0E5FF;
+    color: #1E1E1E;
+    font-size: 1.3em;
+    border: none;
+    padding: 20px 40px;
+    letter-spacing: 0.1em;
+}
+.modal .content .btn-blue {
+    padding: 20px 60px;
+    flex-shrink: 0;
+}
+
+
+
+
+
+/*1. Заказать звонок*/
+/*.modal[data-modal="1"] {*/
+/*    max-width: 700px;*/
+/*}*/
+/*.modal[data-modal="1"] .content {*/
+/*    gap: 40px;*/
+/*}*/
+/*.modal[data-modal="1"] .content .title{*/
+/*    font-size: 3.7em;*/
+/*}*/
+/*.modal[data-modal="1"] .content .describe{*/
+/*    font-size: 1.1em;*/
+/*    line-height: 1.8;*/
+/*}*/
+/*.modal[data-modal="1"] .content .form {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    gap: 20px;*/
+/*}*/
+/*.modal[data-modal="1"] .content .form input{*/
+/*    width: 100%;*/
+/*    background: #D0E5FF;*/
+/*    color: #1E1E1E;*/
+/*    font-size: 1.3em;*/
+/*    border: none;*/
+/*    padding: 20px 40px;*/
+/*    letter-spacing: 0.1em;*/
+/*}*/
+/*.modal[data-modal="1"] .content .btn-blue {*/
+/*    padding: 20px 60px;*/
+/*    flex-shrink: 0;*/
+/*}*/
+
+    /*2. Получить консультацию*/
+.modal[data-modal="2"] {
+
+}
+
+/*3. Мы получили вашу заявку*/
+.modal[data-modal="3"] {
+
+}
+
+/*4. Получить банкротство*/
+.modal[data-modal="4"] {
+
+}
+
+/*5. Оставить заявку*/
+.modal[data-modal="5"] {
+
+}
+
+/*6. Получить чек-лист*/
+.modal[data-modal="6"] {
+
+}

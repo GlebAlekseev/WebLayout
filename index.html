@@ -6,8 +6,114 @@
     <title>Главная</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="modal.css">
 </head>
 <body class="color-5E5E5E-gray">
+
+<!-- modal-open-->
+<!--Модальные окна-->
+<!--1. Заказать звонок-->
+<div class="modal" data-modal="1">
+    <svg class="cross-icon modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <div class="content">
+        <h2 class="title color-307FE2-azure">Заказать звонок</h2>
+        <p class="describe color-1E1E1E-black">
+            Заполните свои контактные данные, и <b>в ближайшее
+            время</b> мы свяжемся с вами по указанному номеру
+        </p>
+        <div class="form">
+            <input type="text" class="phone">
+            <div class="btn-blue open-modal" data-modal="3">Заказать звонок
+                <div class="illustration"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--2. Получить консультацию-->
+<div class="modal" data-modal="2">
+    <svg class="cross-icon modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <div class="content">
+        <h2 class="title color-307FE2-azure">Получить консультацию</h2>
+        <p class="describe color-1E1E1E-black">
+            Чтобы получить консультацию, заполните свои контактные
+            данные, и <b>мы свяжемся с вами</b> по указанному номеру
+        </p>
+        <div class="form">
+            <input type="text" class="phone">
+            <div class="btn-blue open-modal" data-modal="3">Получить бесплатную консультацию
+                <div class="illustration"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--3. Мы получили вашу заявку-->
+<div class="modal" data-modal="3">
+    <svg class="cross-icon modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <div class="content">
+        <h2 class="title color-307FE2-azure">Мы получили вашу заявку</h2>
+        <p class="describe color-1E1E1E-black">
+            В ближайшее время мы свяжемся с вами
+            по указанному номеру телефона
+        </p>
+        <div class="btn-blue modal-close">Хорошо</div>
+    </div>
+</div>
+<!--4. Получить банкротство-->
+<div class="modal" data-modal="4">
+    <svg class="cross-icon modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <div class="content">
+        <h2 class="title color-307FE2-azure">Получить банкротство</h2>
+        <p class="describe color-1E1E1E-black">
+            Запишитесь к нам на консультацию, чтобы мы могли
+            обсудить все детали <b>вашего безопасного банкротства</b>
+        </p>
+        <div class="form">
+            <input type="text" class="phone">
+            <div class="btn-blue open-modal" data-modal="3">Получить банкротство безопасно
+                <div class="illustration"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--5. Оставить заявку-->
+<div class="modal" data-modal="5">
+    <svg class="cross-icon modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <div class="content">
+        <h2 class="title color-307FE2-azure">Оставить заявку</h2>
+        <h3 class="subtitle">Банкротство при сумме долга до 2 млн. руб.</h3>
+        <p class="describe color-1E1E1E-black">
+            Чтобы оставить заявку на услугу,  заполните свои контактные
+            данные, и <b>мы свяжемся с вами</b> по указанному номеру
+        </p>
+        <div class="form">
+            <input type="text" class="phone">
+            <div class="btn-blue open-modal" data-modal="3">Оставить заявку
+                <div class="illustration"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--6. Получить чек-лист-->
+<div class="modal" data-modal="6">
+    <svg class="cross-icon modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <div class="content">
+        <h2 class="title color-307FE2-azure">Получить чек-лист</h2>
+        <p class="describe color-1E1E1E-black">
+            Чтобы получить чек-лист, заполните свои контактные данные,
+            и <b>скачивание бесплатного чек-листа станет доступным</b>
+        </p>
+        <div class="form">
+            <input type="text" class="phone">
+            <div class="btn-blue open-modal" data-modal="3">
+                <span class="download-icon-after">Получить чек-лист бесплатно</span>
+                <div class="illustration"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="overlay"></div>
+
 <!-- Блок 1 -->
 
 <section class="block-1 none">
@@ -27,7 +133,7 @@
             <div class="sunrise"></div>
             <div class="man"></div>
             <div class="frame"></div>
-            <div class="stamp"></div>
+            <div class="stamp open-modal" data-modal="2"></div>
             <div class="arrow"></div>
             <div class="arrow clickbait"></div>
             <h1 class="color-F6F6F6-white">Банкротство</h1>
@@ -52,7 +158,7 @@
                     </ul>
                     <div class="phone">
                         <b class="number">+7 (423) 200-00-00</b>
-                        <a class="order-call fw-500 phone-icon-before">Заказать звонок</a>
+                        <a class="order-call fw-500 phone-icon-before open-modal" data-modal="1">Заказать звонок</a>
                     </div>
                 </div>
                 <h2 class="title color-1E1E1E-black">Банкротство физлиц и ИП</h2>
@@ -175,7 +281,7 @@
                         <span> <b>прав</b> на вылет за границу</span>
                     </div>
                 </div>
-                <div class="btn-yellow">
+                <div class="btn-yellow open-modal" data-modal="4">
                     <span class="check-icon-after">Получить банкротство безопасно</span>
                 </div>
             </div>
@@ -456,7 +562,7 @@
     <div class="bg">
         <div class="chain-left"></div>
         <div class="chain-right"></div>
-        <div class="stamp"></div>
+        <div class="stamp open-modal" data-modal="2"></div>
         <div class="broken-glass-1"></div>
         <div class="broken-glass-2"></div>
     </div>
@@ -485,7 +591,7 @@
                     <span class="result-title">Итого всё вместе:</span>
                     <span class="result-cost-title">170 тыс. руб.</span>
                     <span class="result-cost-subtitle color-307FE2-azure">В рассрочку от 11 тыс. руб./мес.</span>
-                    <div class="btn-blue">
+                    <div class="btn-blue open-modal" data-modal="5">
                         <span class="write-icon-after">Оставить заявку</span>
                     </div>
                 </div>
@@ -507,7 +613,7 @@
                     <span class="result-title">Итого всё вместе:</span>
                     <span class="result-cost-title">280 тыс. руб.</span>
                     <span class="result-cost-subtitle color-307FE2-azure">В рассрочку от 22 тыс. руб./мес.</span>
-                    <div class="btn-blue">
+                    <div class="btn-blue open-modal" data-modal="5">
                         <span class="write-icon-after">Оставить заявку</span>
                     </div>
                 </div>
@@ -529,7 +635,7 @@
                     <span class="result-title">Итого всё вместе:</span>
                     <span class="result-cost-title">390 тыс. руб.</span>
                     <span class="result-cost-subtitle color-307FE2-azure">В рассрочку от 33 тыс. руб./мес.</span>
-                    <div class="btn-blue">
+                    <div class="btn-blue open-modal" data-modal="5">
                         <span class="write-icon-after">Оставить заявку</span>
                     </div>
                 </div>
@@ -554,7 +660,7 @@
                     <span class="result-title">Итого всё вместе:</span>
                     <span class="result-cost-title">230 тыс. руб.</span>
                     <span class="result-cost-subtitle color-307FE2-azure">В рассрочку от 16 тыс. руб./мес.</span>
-                    <div class="btn-blue">
+                    <div class="btn-blue open-modal" data-modal="5">
                         <span class="write-icon-after">Оставить заявку</span>
                     </div>
                 </div>
@@ -579,7 +685,7 @@
                     <span class="result-title">Итого всё вместе:</span>
                     <span class="result-cost-title">395 тыс. руб.</span>
                     <span class="result-cost-subtitle color-307FE2-azure">В рассрочку от 33 тыс. руб./мес.</span>
-                    <div class="btn-blue">
+                    <div class="btn-blue open-modal" data-modal="5">
                         <span class="write-icon-after">Оставить заявку</span>
                     </div>
                 </div>
@@ -604,14 +710,14 @@
                     <span class="result-title">Итого всё вместе:</span>
                     <span class="result-cost-title">560 тыс. руб.</span>
                     <span class="result-cost-subtitle color-307FE2-azure">В рассрочку от 49 тыс. руб./мес.</span>
-                    <div class="btn-blue">
+                    <div class="btn-blue open-modal" data-modal="5">
                         <span class="write-icon-after">Оставить заявку</span>
                     </div>
                 </div>
             </div>
             <div class="down">
                 <h3 class="title">Бесплатная консультация</h3>
-                <div class="btn-blue">
+                <div class="btn-blue open-modal" data-modal="5">
                     <span class="write-icon-after">Записаться</span>
                 </div>
             </div>
@@ -633,7 +739,7 @@
                         который поможет вам найти деньги на юридические
                         услуги по получению банкротства
                     </p>
-                    <div class="btn-yellow">
+                    <div class="btn-yellow open-modal" data-modal="6">
                         <div class="poster"></div>
                         <span class="check-icon-after">Получить чек-лист бесплатно</span>
                     </div>
@@ -700,7 +806,9 @@
                 </div>
 
                 <div class="page-number">
+                    <div class="turn-left"></div>
                     <span><b class="color-307FE2-azure">1</b> из <b>15</b></span>
+                    <div class="turn-right"></div>
                 </div>
             </div>
         </div>
@@ -720,7 +828,7 @@
                         с возможностью
                     </h2>
                     <p class="describe fw-500">сохранения имущества</p>
-                    <div class="btn-yellow">
+                    <div class="btn-yellow open-modal" data-modal="5">
                         Списать до 100% долгов
                         <div class="home"></div>
                     </div>
@@ -807,7 +915,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stamp"></div>
+            <div class="stamp open-modal" data-modal="2"></div>
         </div>
     </div>
 </section>
@@ -944,7 +1052,7 @@
                     <p class="describe fw-500">
                         В ходе консультации мы определим, можно ли списать ваши долги через процедуру банкротства
                     </p>
-                    <div class="btn-yellow">Получить консультацию бесплатно
+                    <div class="btn-yellow open-modal" data-modal="2">Получить консультацию бесплатно
                         <div class="man"></div>
                         <div class="column color-F6F6F6-white">
                             <div class="row-1">
@@ -1116,7 +1224,7 @@
                         – вернем до 100% средств за наши услуги
                     </p>
                     <div class="btn-yellow">
-                        <span class="check-icon-after">
+                        <span class="check-icon-after open-modal" data-modal="4">
                             Получить банкротство с гарантией
                         </span>
                         <div class="wallet-1"></div>
@@ -1179,5 +1287,10 @@
         </div>
     </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script src="modal.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

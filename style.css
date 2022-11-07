@@ -34,6 +34,11 @@ b, h2, h3 {
     text-align: center;
     /*flex-shrink: 0;*/
 }
+.btn-yellow:hover {
+    background: #FFF07C;
+    cursor: pointer;
+    transition: background-color .2s;
+}
 
 .btn-blue {
     background: #307FE2;
@@ -45,7 +50,11 @@ b, h2, h3 {
     text-align: center;
     /*flex-shrink: 0;*/
 }
-
+.btn-blue:hover {
+    background: #3197F4;
+    cursor: pointer;
+    transition: background-color .2s;
+}
 
 .color-93DA49-green {
     color: #93DA49;
@@ -94,30 +103,59 @@ b, h2, h3 {
     gap: 10px;
 }
 
-.social a {
-    display: inline-block;
+.social li {
     width: 36px;
     height: 36px;
+    border-radius: 50%;
+    background: #3197F4;
+    position: relative;
+
+}
+.social a {
+    position: absolute;
+
+}
+.social li:hover {
+    cursor: pointer;
+    background: none;
+    filter: invert(47%) sepia(92%) saturate(1395%) hue-rotate(186deg) brightness(96%) contrast(99%);
+    transition: .2s;
 }
 
 .social .vk {
-    background: url("images/vk-icon.svg") center;
+    background: url("images/social-vk.svg") center;
     background-size: cover;
+    width: 18px;
+    height: 10px;
+    bottom: 12px;
+    right: 9px;
 }
 
 .social .yt {
-    background: url("images/yt-icon.svg") center;
+    background: url("images/social-yt.svg") center;
     background-size: cover;
+    width: 19px;
+    height: 13px;
+    bottom: 11px;
+    right: 9px;
 }
 
 .social .inst {
-    background: url("images/instagram-icon.svg") center;
+    background: url("images/social-insta.svg") center;
     background-size: cover;
+    width: 19px;
+    height: 17px;
+    bottom: 9px;
+    right: 9px;
 }
 
 .social .ok {
-    background: url("images/ok-icon.svg") center;
+    background: url("images/social-ok.svg") center;
     background-size: cover;
+    width: 17px;
+    height: 17px;
+    bottom: 9px;
+    right: 10px;
 }
 
 /**/
@@ -346,6 +384,11 @@ b, h2, h3 {
     display: flex;
     gap: 10px;
 }
+.block-1 .content .header .phone .order-call:hover{
+    color: #307FE2;
+    cursor: pointer;
+    transition: color .2s;
+}
 
 .block-1 .content .title {
     font-size: 3.7em;
@@ -371,7 +414,7 @@ b, h2, h3 {
     height: 100%;
     width: 100%;
     background: #307FE2;
-    z-index: -1;
+    /*z-index: -1;*/
     clip-path: ellipse(140% 100% at 50% 0%);
 }
 
@@ -431,8 +474,12 @@ b, h2, h3 {
     left: calc(50% - 110px);
     background: url("images/stamp-icon.svg") no-repeat;
     height: 215px;
-    width: 215px;
+    width: 230px;
     z-index: 1;
+}
+.block-1 .bg .stamp:hover {
+    cursor: pointer;
+    filter: brightness(110%);
 }
 
 .block-1 .bg .arrow.clickbait {
@@ -1203,6 +1250,10 @@ b, h2, h3 {
     top: calc(50% - 131px);
     z-index: 10;
 }
+.block-6 .bg .stamp:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
 
 .block-6 .bg .broken-glass-1 {
     position: absolute;
@@ -1528,7 +1579,7 @@ b, h2, h3 {
     height: 16%;
 }
 
-.block-9 .content .slider .page-number::before {
+.block-9 .content .slider .page-number .turn-left {
     content: "";
     background: url("images/turn-left-icon.svg") center;
     background-size: cover;
@@ -1538,8 +1589,15 @@ b, h2, h3 {
     top: calc(50% - 153px);
     left: -70px;
 }
+.block-9 .content .slider .page-number .turn-left:hover{
+    filter: brightness(110%);
+    cursor: pointer;
+    transition: .2s;
+}
 
-.block-9 .content .slider .page-number::after {
+
+
+.block-9 .content .slider .page-number .turn-right {
     content: "";
     background: url("images/turn-right-icon.svg") center;
     background-size: cover;
@@ -1549,7 +1607,11 @@ b, h2, h3 {
     top: calc(50% - 153px);
     right: -70px;
 }
-
+.block-9 .content .slider .page-number .turn-right:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+    transition: .2s;
+}
 
 .block-9 .bg .up .element-1 {
     background: url("images/b9up1.png") center;
@@ -1769,12 +1831,16 @@ b, h2, h3 {
     background: url("images/stamp-icon.svg");
     background-size: cover;
 }
+.block-12 .content .stamp:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
 
 /* Block 13*/
 
-/*.block-13 {*/
-/*    margin-top: 100px;*/
-/*}*/
+.block-13 {
+    margin-top: 100px;
+}
 
 .block-13 .content {
     align-items: center;
@@ -2175,7 +2241,11 @@ b, h2, h3 {
 .block-17 .content .features .feature-wrapper .title {
     font-size: 1.7em;
 }
-
+.block-17 .content .features .feature-wrapper .title:hover {
+    color: #307FE2;
+    cursor: pointer;
+    transition: color .2s;
+}
 .block-17 .content .features .feature-wrapper .describe {
     font-size: 1.1em;
     line-height: 2;

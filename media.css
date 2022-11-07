@@ -54,6 +54,7 @@
     .block-1 .content .header .phone .order-call::before {
         background: url("images/phone-icon-yellow.svg") center;
         background-size: cover;
+        margin-right: 10px;
     }
 
     .block-1 .content .header .logotype {
@@ -620,7 +621,9 @@
         align-items: center;
         text-align: center;
     }
-
+    .block-19 .container.down .column .info-wrapper {
+        align-items: center;
+    }
     .block-19 .content .column > .title .question {
         width: 130px;
         height: 200px;
@@ -777,7 +780,7 @@
     }
 
     .block-18 .content .column .btn-yellow .wallet-2 {
-        top: -550px;
+        top: -450px;
         right: -650px;
     }
 
